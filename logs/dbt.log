@@ -1,0 +1,1951 @@
+
+
+============================== 2022-04-19 10:11:15.993028 | d7355d1e-7b8b-4139-9d02-61efe130c287 ==============================
+10:11:15.993028 [info ] [MainThread]: Running with dbt=1.0.4
+10:11:15.993619 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/root/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+10:11:15.993948 [debug] [MainThread]: Tracking: do not track
+
+
+============================== 2022-04-19 10:11:26.011458 | 52b8c981-58bc-47f9-bc13-d5bc8454e190 ==============================
+10:11:26.011458 [info ] [MainThread]: Running with dbt=1.0.4
+10:11:26.011732 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/root/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, defer=None, state=None, cls=<class 'dbt.task.deps.DepsTask'>, which='deps', rpc_method='deps')
+10:11:26.011843 [debug] [MainThread]: Tracking: do not track
+10:11:26.016312 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-hz3sd1by'
+10:11:26.016776 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/index.json
+10:11:26.388237 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/index.json 200
+10:11:26.389280 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+10:11:26.665112 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+10:11:26.672026 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.3.json
+10:11:27.103619 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.3.json 200
+10:11:27.104155 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+10:11:27.388334 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+10:11:27.406148 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.0.json
+10:11:27.670247 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.0.json 200
+10:11:27.671014 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+10:11:27.866962 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+10:11:27.892568 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.0.json
+10:11:28.184996 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.0.json 200
+10:11:28.185773 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+10:11:28.435099 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+10:11:28.447375 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+10:11:28.678599 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+10:11:28.732052 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.3.json
+10:11:28.951142 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.3.json 200
+10:11:28.951497 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.0.json
+10:11:29.242320 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.0.json 200
+10:11:29.242933 [info ] [MainThread]: Installing calogica/dbt_date
+10:11:29.708313 [info ] [MainThread]:   Installed from version 0.5.3
+10:11:29.708562 [info ] [MainThread]:   Updated version available: 0.5.7
+10:11:29.708803 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+10:11:30.175427 [info ] [MainThread]:   Installed from version 0.8.0
+10:11:30.175882 [info ] [MainThread]:   Updated version available: 0.8.4
+10:11:30.176339 [info ] [MainThread]: 
+10:11:30.176790 [info ] [MainThread]: Updates available for packages: ['calogica/dbt_date', 'dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+
+
+============================== 2022-04-19 10:11:58.627594 | d92dcbbb-955f-459a-ab4e-da7ffcfee8d1 ==============================
+10:11:58.627594 [info ] [MainThread]: Running with dbt=1.0.4
+10:11:58.627858 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/root/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, defer=None, state=None, cls=<class 'dbt.task.deps.DepsTask'>, which='deps', rpc_method='deps')
+10:11:58.627962 [debug] [MainThread]: Tracking: do not track
+10:11:58.632816 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-0d36flvg'
+10:11:58.633512 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/index.json
+10:11:58.947633 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/index.json 200
+10:11:58.948313 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+10:11:59.182670 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+10:11:59.186780 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json
+10:11:59.468727 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json 200
+10:11:59.469623 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+10:11:59.740214 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+10:11:59.757977 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json
+10:11:59.981917 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json 200
+10:11:59.982699 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+10:12:00.188276 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+10:12:00.206896 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json
+10:12:00.510101 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json 200
+10:12:00.510609 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+10:12:00.741802 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+10:12:00.746000 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+10:12:01.022600 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+10:12:01.040345 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json
+10:12:01.362516 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json 200
+10:12:01.362995 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json
+10:12:01.621277 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json 200
+10:12:01.621799 [info ] [MainThread]: Installing calogica/dbt_date
+10:12:01.906442 [info ] [MainThread]:   Installed from version 0.5.7
+10:12:01.906697 [info ] [MainThread]:   Up to date!
+10:12:01.906951 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+10:12:02.364903 [info ] [MainThread]:   Installed from version 0.8.4
+10:12:02.365314 [info ] [MainThread]:   Up to date!
+
+
+============================== 2022-04-19 10:12:09.822919 | 00fcba5d-4d31-49b1-a47d-448dc96f8533 ==============================
+10:12:09.822919 [info ] [MainThread]: Running with dbt=1.0.4
+10:12:09.823345 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/root/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+10:12:09.823495 [debug] [MainThread]: Tracking: do not track
+10:12:09.848482 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+10:12:09.879276 [debug] [MainThread]: Parsing tests/generic/basic_check_email.sql
+10:12:09.880130 [debug] [MainThread]: Parsing macros/adapters.sql
+10:12:09.912713 [debug] [MainThread]: Parsing macros/catalog.sql
+10:12:09.914256 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+10:12:09.922063 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+10:12:09.925431 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+10:12:09.929877 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+10:12:09.930717 [debug] [MainThread]: Parsing macros/materializations/table.sql
+10:12:09.933315 [debug] [MainThread]: Parsing macros/materializations/view.sql
+10:12:09.934440 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+10:12:09.942852 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+10:12:09.945340 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+10:12:09.947575 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+10:12:09.953421 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+10:12:09.957129 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+10:12:09.964902 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+10:12:09.966763 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+10:12:09.973642 [debug] [MainThread]: Parsing macros/etc/statement.sql
+10:12:09.977501 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+10:12:09.978835 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+10:12:09.979327 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+10:12:09.980047 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+10:12:09.980623 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+10:12:09.981875 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+10:12:09.983716 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+10:12:09.985893 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+10:12:09.987847 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+10:12:09.991110 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+10:12:09.995234 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+10:12:10.003928 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+10:12:10.005280 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+10:12:10.014452 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+10:12:10.027234 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+10:12:10.029742 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+10:12:10.035648 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+10:12:10.037999 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+10:12:10.039918 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+10:12:10.040993 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+10:12:10.046855 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+10:12:10.059978 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+10:12:10.065317 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+10:12:10.073968 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+10:12:10.083364 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+10:12:10.084844 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+10:12:10.099380 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+10:12:10.101135 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+10:12:10.105011 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+10:12:10.106537 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+10:12:10.109061 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_ephemeral.sql
+10:12:10.110642 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_relation.sql
+10:12:10.111572 [debug] [MainThread]: Parsing macros/cross_db_utils/any_value.sql
+10:12:10.112604 [debug] [MainThread]: Parsing macros/cross_db_utils/bool_or.sql
+10:12:10.113888 [debug] [MainThread]: Parsing macros/cross_db_utils/cast_bool_to_text.sql
+10:12:10.115132 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
+10:12:10.115929 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
+10:12:10.118740 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
+10:12:10.123998 [debug] [MainThread]: Parsing macros/cross_db_utils/date_trunc.sql
+10:12:10.125388 [debug] [MainThread]: Parsing macros/cross_db_utils/dateadd.sql
+10:12:10.127877 [debug] [MainThread]: Parsing macros/cross_db_utils/datediff.sql
+10:12:10.135708 [debug] [MainThread]: Parsing macros/cross_db_utils/escape_single_quotes.sql
+10:12:10.137278 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
+10:12:10.138140 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
+10:12:10.139260 [debug] [MainThread]: Parsing macros/cross_db_utils/identifier.sql
+10:12:10.140596 [debug] [MainThread]: Parsing macros/cross_db_utils/intersect.sql
+10:12:10.141434 [debug] [MainThread]: Parsing macros/cross_db_utils/last_day.sql
+10:12:10.144455 [debug] [MainThread]: Parsing macros/cross_db_utils/length.sql
+10:12:10.145523 [debug] [MainThread]: Parsing macros/cross_db_utils/listagg.sql
+10:12:10.152895 [debug] [MainThread]: Parsing macros/cross_db_utils/literal.sql
+10:12:10.153781 [debug] [MainThread]: Parsing macros/cross_db_utils/position.sql
+10:12:10.155058 [debug] [MainThread]: Parsing macros/cross_db_utils/replace.sql
+10:12:10.156123 [debug] [MainThread]: Parsing macros/cross_db_utils/right.sql
+10:12:10.158290 [debug] [MainThread]: Parsing macros/cross_db_utils/safe_cast.sql
+10:12:10.159964 [debug] [MainThread]: Parsing macros/cross_db_utils/split_part.sql
+10:12:10.161747 [debug] [MainThread]: Parsing macros/cross_db_utils/width_bucket.sql
+10:12:10.165912 [debug] [MainThread]: Parsing macros/generic_tests/accepted_range.sql
+10:12:10.168007 [debug] [MainThread]: Parsing macros/generic_tests/at_least_one.sql
+10:12:10.169099 [debug] [MainThread]: Parsing macros/generic_tests/cardinality_equality.sql
+10:12:10.170746 [debug] [MainThread]: Parsing macros/generic_tests/equal_rowcount.sql
+10:12:10.172221 [debug] [MainThread]: Parsing macros/generic_tests/equality.sql
+10:12:10.175283 [debug] [MainThread]: Parsing macros/generic_tests/expression_is_true.sql
+10:12:10.176805 [debug] [MainThread]: Parsing macros/generic_tests/fewer_rows_than.sql
+10:12:10.178088 [debug] [MainThread]: Parsing macros/generic_tests/mutually_exclusive_ranges.sql
+10:12:10.184839 [debug] [MainThread]: Parsing macros/generic_tests/not_accepted_values.sql
+10:12:10.186701 [debug] [MainThread]: Parsing macros/generic_tests/not_constant.sql
+10:12:10.187733 [debug] [MainThread]: Parsing macros/generic_tests/not_null_proportion.sql
+10:12:10.189562 [debug] [MainThread]: Parsing macros/generic_tests/recency.sql
+10:12:10.191068 [debug] [MainThread]: Parsing macros/generic_tests/relationships_where.sql
+10:12:10.193108 [debug] [MainThread]: Parsing macros/generic_tests/sequential_values.sql
+10:12:10.195717 [debug] [MainThread]: Parsing macros/generic_tests/test_not_null_where.sql
+10:12:10.196925 [debug] [MainThread]: Parsing macros/generic_tests/test_unique_where.sql
+10:12:10.198156 [debug] [MainThread]: Parsing macros/generic_tests/unique_combination_of_columns.sql
+10:12:10.200799 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+10:12:10.202134 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+10:12:10.203185 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+10:12:10.204243 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+10:12:10.205259 [debug] [MainThread]: Parsing macros/materializations/insert_by_period_materialization.sql
+10:12:10.225070 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+10:12:10.228696 [debug] [MainThread]: Parsing macros/sql/deduplicate.sql
+10:12:10.231429 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+10:12:10.235026 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+10:12:10.239536 [debug] [MainThread]: Parsing macros/sql/get_filtered_columns_in_relation.sql
+10:12:10.242110 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+10:12:10.244294 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+10:12:10.247264 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+10:12:10.250249 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+10:12:10.251632 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+10:12:10.256866 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+10:12:10.258315 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+10:12:10.259438 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+10:12:10.264131 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+10:12:10.265497 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+10:12:10.266830 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+10:12:10.270412 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+10:12:10.271771 [debug] [MainThread]: Parsing macros/sql/star.sql
+10:12:10.274588 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+10:12:10.277519 [debug] [MainThread]: Parsing macros/sql/union.sql
+10:12:10.286468 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+10:12:10.293272 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+10:12:10.295056 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+10:12:10.296375 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+10:12:10.298503 [debug] [MainThread]: Parsing macros/get_base_dates.sql
+10:12:10.302962 [debug] [MainThread]: Parsing macros/get_date_dimension.sql
+10:12:10.321329 [debug] [MainThread]: Parsing macros/calendar_date/convert_timezone.sql
+10:12:10.325621 [debug] [MainThread]: Parsing macros/calendar_date/date_part.sql
+10:12:10.326844 [debug] [MainThread]: Parsing macros/calendar_date/day_name.sql
+10:12:10.329527 [debug] [MainThread]: Parsing macros/calendar_date/day_of_month.sql
+10:12:10.330451 [debug] [MainThread]: Parsing macros/calendar_date/day_of_week.sql
+10:12:10.336273 [debug] [MainThread]: Parsing macros/calendar_date/day_of_year.sql
+10:12:10.337882 [debug] [MainThread]: Parsing macros/calendar_date/from_unixtimestamp.sql
+10:12:10.342320 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_end.sql
+10:12:10.344511 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_of_year.sql
+10:12:10.346887 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_start.sql
+10:12:10.349392 [debug] [MainThread]: Parsing macros/calendar_date/last_month.sql
+10:12:10.349885 [debug] [MainThread]: Parsing macros/calendar_date/last_month_name.sql
+10:12:10.350450 [debug] [MainThread]: Parsing macros/calendar_date/last_month_number.sql
+10:12:10.351049 [debug] [MainThread]: Parsing macros/calendar_date/last_week.sql
+10:12:10.351553 [debug] [MainThread]: Parsing macros/calendar_date/month_name.sql
+10:12:10.354053 [debug] [MainThread]: Parsing macros/calendar_date/n_days_ago.sql
+10:12:10.354948 [debug] [MainThread]: Parsing macros/calendar_date/n_days_away.sql
+10:12:10.355501 [debug] [MainThread]: Parsing macros/calendar_date/n_months_ago.sql
+10:12:10.356280 [debug] [MainThread]: Parsing macros/calendar_date/n_months_away.sql
+10:12:10.357032 [debug] [MainThread]: Parsing macros/calendar_date/n_weeks_ago.sql
+10:12:10.357798 [debug] [MainThread]: Parsing macros/calendar_date/n_weeks_away.sql
+10:12:10.358571 [debug] [MainThread]: Parsing macros/calendar_date/next_month.sql
+10:12:10.359015 [debug] [MainThread]: Parsing macros/calendar_date/next_month_name.sql
+10:12:10.359711 [debug] [MainThread]: Parsing macros/calendar_date/next_month_number.sql
+10:12:10.360231 [debug] [MainThread]: Parsing macros/calendar_date/next_week.sql
+10:12:10.360659 [debug] [MainThread]: Parsing macros/calendar_date/now.sql
+10:12:10.361130 [debug] [MainThread]: Parsing macros/calendar_date/periods_since.sql
+10:12:10.361716 [debug] [MainThread]: Parsing macros/calendar_date/to_unixtimestamp.sql
+10:12:10.363054 [debug] [MainThread]: Parsing macros/calendar_date/today.sql
+10:12:10.363468 [debug] [MainThread]: Parsing macros/calendar_date/tomorrow.sql
+10:12:10.363975 [debug] [MainThread]: Parsing macros/calendar_date/week_end.sql
+10:12:10.365933 [debug] [MainThread]: Parsing macros/calendar_date/week_of_year.sql
+10:12:10.367439 [debug] [MainThread]: Parsing macros/calendar_date/week_start.sql
+10:12:10.369954 [debug] [MainThread]: Parsing macros/calendar_date/yesterday.sql
+10:12:10.370533 [debug] [MainThread]: Parsing macros/fiscal_date/get_fiscal_periods.sql
+10:12:10.371878 [debug] [MainThread]: Parsing macros/fiscal_date/get_fiscal_year_dates.sql
+10:12:10.744035 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_customer/dim_customer.sql
+10:12:10.755191 [debug] [MainThread]: 1603: static parser failed on marts/dimensions/dim_date/dim_date.sql
+10:12:10.855839 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/dimensions/dim_date/dim_date.sql
+10:12:10.856939 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_film/dim_film.sql
+10:12:10.860019 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_staff/dim_staff.sql
+10:12:10.862245 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_store/dim_store.sql
+10:12:10.864542 [debug] [MainThread]: 1699: static parser successfully parsed marts/facts/fct_sales/fct_sales.sql
+10:12:10.866642 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_customer.sql
+10:12:10.869124 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_film.sql
+10:12:10.872381 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_staff.sql
+10:12:10.874605 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_store.sql
+10:12:10.876958 [debug] [MainThread]: 1699: static parser successfully parsed staging/facts/stg_pagila_sales.sql
+10:12:11.100444 [info ] [MainThread]: Found 11 models, 18 tests, 0 snapshots, 0 analyses, 486 macros, 0 operations, 0 seed files, 16 sources, 0 exposures, 0 metrics
+10:12:11.102396 [info ] [MainThread]: 
+10:12:11.102747 [debug] [MainThread]: Acquiring new snowflake connection "master"
+10:12:11.103863 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+10:12:11.104740 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+10:12:11.123962 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+10:12:11.126634 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+10:12:11.126863 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+/* run by JVEKEMANS */
+10:12:11.127037 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+/* run by JVEKEMANS */
+10:12:11.127160 [debug] [ThreadPool]: Opening a new connection, currently in state init
+10:12:11.127292 [debug] [ThreadPool]: Opening a new connection, currently in state init
+10:12:12.979868 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.85 seconds
+10:12:12.983283 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+10:12:12.989676 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.86 seconds
+10:12:12.992640 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+10:12:13.221416 [debug] [ThreadPool]: Acquiring new snowflake connection "create_AIRBYTE_DATABASE_PAGILA_data_mart"
+10:12:13.221872 [debug] [ThreadPool]: Acquiring new snowflake connection "create_AIRBYTE_DATABASE_PAGILA_staging"
+10:12:13.222473 [debug] [ThreadPool]: Acquiring new snowflake connection "create_AIRBYTE_DATABASE_PAGILA_data_mart"
+10:12:13.222931 [debug] [ThreadPool]: Acquiring new snowflake connection "create_AIRBYTE_DATABASE_PAGILA_staging"
+10:12:13.223454 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='airbyte_database', schema='pagila_data_mart', identifier=None)"
+10:12:13.223837 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='airbyte_database', schema='pagila_staging', identifier=None)"
+10:12:13.246745 [debug] [ThreadPool]: Using snowflake connection "create_AIRBYTE_DATABASE_PAGILA_data_mart"
+10:12:13.248328 [debug] [ThreadPool]: Using snowflake connection "create_AIRBYTE_DATABASE_PAGILA_staging"
+10:12:13.248643 [debug] [ThreadPool]: On create_AIRBYTE_DATABASE_PAGILA_data_mart: create schema if not exists AIRBYTE_DATABASE.PAGILA_data_mart
+/* run by JVEKEMANS */
+10:12:13.249019 [debug] [ThreadPool]: On create_AIRBYTE_DATABASE_PAGILA_staging: create schema if not exists AIRBYTE_DATABASE.PAGILA_staging
+/* run by JVEKEMANS */
+10:12:13.249375 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:12:13.249761 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:12:14.467205 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.22 seconds
+10:12:14.468044 [debug] [ThreadPool]: On create_AIRBYTE_DATABASE_PAGILA_staging: Close
+10:12:14.486837 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.24 seconds
+10:12:14.488299 [debug] [ThreadPool]: On create_AIRBYTE_DATABASE_PAGILA_data_mart: Close
+10:12:14.685519 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_PAGILA_data_mart"
+10:12:14.688247 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_PAGILA_staging"
+10:12:14.708903 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_PAGILA_staging"
+10:12:14.714507 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_PAGILA_staging: show terse objects in AIRBYTE_DATABASE.PAGILA_staging
+/* run by JVEKEMANS */
+10:12:14.715764 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_PAGILA_data_mart"
+10:12:14.716100 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:12:14.716491 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_PAGILA_data_mart: show terse objects in AIRBYTE_DATABASE.PAGILA_data_mart
+/* run by JVEKEMANS */
+10:12:14.721588 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:12:16.011832 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.3 seconds
+10:12:16.013069 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_PAGILA_staging: Close
+10:12:16.049668 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.33 seconds
+10:12:16.051825 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_PAGILA_data_mart: Close
+10:12:16.245146 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+10:12:16.245727 [info ] [MainThread]: 
+10:12:16.263743 [debug] [Thread-1  ]: Began running node model.AIRBYTE_DBT_DEMO.dim_date
+10:12:16.264272 [debug] [Thread-2  ]: Began running node model.AIRBYTE_DBT_DEMO.stg_pagila_customer
+10:12:16.264779 [info ] [Thread-1  ]: 1 of 11 START table model PAGILA_data_mart.dim_date............................. [RUN]
+10:12:16.264978 [debug] [Thread-3  ]: Began running node model.AIRBYTE_DBT_DEMO.stg_pagila_film
+10:12:16.265371 [info ] [Thread-2  ]: 2 of 11 START view model PAGILA_staging.stg_pagila_customer..................... [RUN]
+10:12:16.265577 [debug] [Thread-4  ]: Began running node model.AIRBYTE_DBT_DEMO.stg_pagila_sales
+10:12:16.266148 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.dim_date"
+10:12:16.266454 [info ] [Thread-3  ]: 3 of 11 START view model PAGILA_staging.stg_pagila_film......................... [RUN]
+10:12:16.267017 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_customer"
+10:12:16.267366 [info ] [Thread-4  ]: 4 of 11 START view model PAGILA_staging.stg_pagila_sales........................ [RUN]
+10:12:16.267577 [debug] [Thread-1  ]: Began compiling node model.AIRBYTE_DBT_DEMO.dim_date
+10:12:16.268246 [debug] [Thread-3  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_film"
+10:12:16.268531 [debug] [Thread-2  ]: Began compiling node model.AIRBYTE_DBT_DEMO.stg_pagila_customer
+10:12:16.269302 [debug] [Thread-4  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_sales"
+10:12:16.269694 [debug] [Thread-1  ]: Compiling model.AIRBYTE_DBT_DEMO.dim_date
+10:12:16.269988 [debug] [Thread-3  ]: Began compiling node model.AIRBYTE_DBT_DEMO.stg_pagila_film
+10:12:16.270233 [debug] [Thread-2  ]: Compiling model.AIRBYTE_DBT_DEMO.stg_pagila_customer
+10:12:16.270423 [debug] [Thread-4  ]: Began compiling node model.AIRBYTE_DBT_DEMO.stg_pagila_sales
+10:12:16.286282 [debug] [Thread-1  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.dim_date"
+10:12:16.286753 [debug] [Thread-3  ]: Compiling model.AIRBYTE_DBT_DEMO.stg_pagila_film
+10:12:16.290619 [debug] [Thread-2  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_customer"
+10:12:16.291007 [debug] [Thread-4  ]: Compiling model.AIRBYTE_DBT_DEMO.stg_pagila_sales
+10:12:16.291141 [debug] [Thread-1  ]: On model.AIRBYTE_DBT_DEMO.dim_date: select datediff(
+        day,
+        cast('2015-01-01' as 
+    timestamp_ntz
+),
+        cast('2022-12-31' as 
+    timestamp_ntz
+)
+        )
+/* run by JVEKEMANS */
+10:12:16.295841 [debug] [Thread-3  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_film"
+10:12:16.299987 [debug] [Thread-4  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_sales"
+10:12:16.300464 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:12:16.303991 [debug] [Thread-2  ]: finished collecting timing info
+10:12:16.305089 [debug] [Thread-2  ]: Began executing node model.AIRBYTE_DBT_DEMO.stg_pagila_customer
+10:12:16.310659 [debug] [Thread-4  ]: finished collecting timing info
+10:12:16.327509 [debug] [Thread-3  ]: finished collecting timing info
+10:12:16.327962 [debug] [Thread-4  ]: Began executing node model.AIRBYTE_DBT_DEMO.stg_pagila_sales
+10:12:16.350533 [debug] [Thread-2  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_customer"
+10:12:16.350881 [debug] [Thread-3  ]: Began executing node model.AIRBYTE_DBT_DEMO.stg_pagila_film
+10:12:16.355451 [debug] [Thread-4  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_sales"
+10:12:16.424110 [debug] [Thread-3  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_film"
+10:12:16.426539 [debug] [Thread-3  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_film"
+10:12:16.426815 [debug] [Thread-3  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_film: create or replace  view AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_film 
+  
+   as (
+    with film as (
+select film.film_id,
+       title,
+       description,
+       release_year,
+       film.language_id,
+       film.original_language_id,
+       rental_duration,
+       rental_rate,
+       length,
+       replacement_cost,
+       rating,
+       special_features,
+       film.last_update,
+       language.name as language,
+       og_language.name as original_language,
+       category.name as category_name
+from AIRBYTE_DATABASE.pagila.film
+LEFT JOIN AIRBYTE_DATABASE.pagila.language on film.language_id = language.language_id
+LEFT JOIN AIRBYTE_DATABASE.pagila.language og_language on film.original_language_id = language.language_id
+LEFT JOIN AIRBYTE_DATABASE.pagila.film_category on film_category.film_id = film.film_id
+left join AIRBYTE_DATABASE.pagila.category  on category.category_id = film_category.category_id)
+
+select *
+from film
+  )
+/* run by JVEKEMANS */;
+10:12:16.428516 [debug] [Thread-4  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_sales"
+10:12:16.428880 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+10:12:16.430738 [debug] [Thread-2  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_customer"
+10:12:16.431013 [debug] [Thread-4  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_sales: create or replace  view AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_sales 
+  
+   as (
+    WITH sales
+AS (
+    SELECT payment_id,
+    payment.customer_id,
+    inventory.film_id,
+    inventory.store_id,
+    payment.staff_id,
+    payment.payment_date,
+    payment.amount
+    FROM AIRBYTE_DATABASE.pagila.payment
+    LEFT JOIN AIRBYTE_DATABASE.pagila.rental ON rental.rental_id = payment.rental_id
+    LEFT JOIN AIRBYTE_DATABASE.pagila.inventory ON inventory.inventory_id = rental.inventory_id
+)
+
+select * 
+from sales
+  )
+/* run by JVEKEMANS */;
+10:12:16.433878 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_customer: create or replace  view AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_customer 
+  
+   as (
+    WITH customer
+AS (
+SELECT customer_id,
+		store_id,
+		first_name,
+		last_name,
+		email,
+		active,
+		create_date,
+		address.address,
+		address.district,
+		address.postal_code,
+		address.phone,
+		city.city,
+		country.country,
+		customer.last_update
+	FROM AIRBYTE_DATABASE.pagila.customer
+	LEFT JOIN AIRBYTE_DATABASE.pagila.address on address.address_id = customer.address_id
+	LEFT JOIN AIRBYTE_DATABASE.pagila.city on address.city_id = city.city_id
+	LEFT JOIN AIRBYTE_DATABASE.pagila.country on city.country_id = country.country_id)
+
+select *
+from customer
+  )
+/* run by JVEKEMANS */;
+10:12:16.434120 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+10:12:16.434333 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+10:12:18.167713 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01a3b584-3201-8ede-0000-1afd0261b362
+10:12:18.167914 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+10:12:18.169064 [debug] [Thread-1  ]: finished collecting timing info
+10:12:18.169226 [debug] [Thread-1  ]: On model.AIRBYTE_DBT_DEMO.dim_date: Close
+10:12:18.340440 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 1.91 seconds
+10:12:18.356265 [debug] [Thread-3  ]: finished collecting timing info
+10:12:18.356723 [debug] [Thread-3  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_film: Close
+10:12:18.369296 [debug] [Thread-1  ]: Database Error in model dim_date (models/marts/dimensions/dim_date/dim_date.sql)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+10:12:18.369723 [error] [Thread-1  ]: 1 of 11 ERROR creating table model PAGILA_data_mart.dim_date.................... [[31mERROR[0m in 2.10s]
+10:12:18.369948 [debug] [Thread-1  ]: Finished running node model.AIRBYTE_DBT_DEMO.dim_date
+10:12:18.370072 [debug] [Thread-1  ]: Began running node model.AIRBYTE_DBT_DEMO.stg_pagila_staff
+10:12:18.370209 [info ] [Thread-1  ]: 5 of 11 START view model PAGILA_staging.stg_pagila_staff........................ [RUN]
+10:12:18.370443 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_staff"
+10:12:18.370535 [debug] [Thread-1  ]: Began compiling node model.AIRBYTE_DBT_DEMO.stg_pagila_staff
+10:12:18.370645 [debug] [Thread-1  ]: Compiling model.AIRBYTE_DBT_DEMO.stg_pagila_staff
+10:12:18.379863 [debug] [Thread-1  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_staff"
+10:12:18.381980 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.95 seconds
+10:12:18.384621 [debug] [Thread-4  ]: finished collecting timing info
+10:12:18.384871 [debug] [Thread-1  ]: finished collecting timing info
+10:12:18.385276 [debug] [Thread-4  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_sales: Close
+10:12:18.385626 [debug] [Thread-1  ]: Began executing node model.AIRBYTE_DBT_DEMO.stg_pagila_staff
+10:12:18.393767 [debug] [Thread-1  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_staff"
+10:12:18.397675 [debug] [Thread-1  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_staff"
+10:12:18.397941 [debug] [Thread-1  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_staff: create or replace  view AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_staff 
+  
+   as (
+    with staff as
+(select staff.staff_id,
+       first_name,
+       last_name,
+       staff.address_id,
+       picture,
+       email,
+       staff.store_id,
+       active,
+       username,
+       password,
+       staff.last_update,
+       address,
+       address2,
+       district,
+       address.city_id,
+       postal_code,
+       phone,
+       city,
+       city.country_id,
+       country
+from AIRBYTE_DATABASE.pagila.staff
+left join AIRBYTE_DATABASE.pagila.address on address.address_id = staff.address_id
+left join AIRBYTE_DATABASE.pagila.city on city.city_id = address.city_id
+left join AIRBYTE_DATABASE.pagila.country on country.country_id = city.country_id)
+
+select *
+from staff
+  )
+/* run by JVEKEMANS */;
+10:12:18.398113 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:12:18.407748 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.97 seconds
+10:12:18.410111 [debug] [Thread-2  ]: finished collecting timing info
+10:12:18.410408 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_customer: Close
+10:12:18.668910 [info ] [Thread-2  ]: 2 of 11 OK created view model PAGILA_staging.stg_pagila_customer................ [[32mSUCCESS 1[0m in 2.40s]
+10:12:18.680099 [debug] [Thread-2  ]: Finished running node model.AIRBYTE_DBT_DEMO.stg_pagila_customer
+10:12:18.701818 [debug] [Thread-2  ]: Began running node model.AIRBYTE_DBT_DEMO.stg_pagila_store
+10:12:18.723438 [info ] [Thread-2  ]: 6 of 11 START view model PAGILA_staging.stg_pagila_store........................ [RUN]
+10:12:18.744933 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_store"
+10:12:18.760484 [debug] [Thread-2  ]: Began compiling node model.AIRBYTE_DBT_DEMO.stg_pagila_store
+10:12:18.771776 [debug] [Thread-2  ]: Compiling model.AIRBYTE_DBT_DEMO.stg_pagila_store
+10:12:18.776958 [debug] [Thread-2  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_store"
+10:12:18.777506 [debug] [Thread-2  ]: finished collecting timing info
+10:12:18.777665 [debug] [Thread-2  ]: Began executing node model.AIRBYTE_DBT_DEMO.stg_pagila_store
+10:12:18.783006 [debug] [Thread-2  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_store"
+10:12:18.784761 [debug] [Thread-2  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_store"
+10:12:18.784879 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_store: create or replace  view AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_store 
+  
+   as (
+    select store.store_id,
+       manager_staff_id,
+       store.address_id,
+       store.last_update,
+       address,
+       address2,
+       district,
+       address.city_id,
+       postal_code,
+       phone,
+       city,
+       city.country_id,
+       country
+from AIRBYTE_DATABASE.pagila.store
+left join AIRBYTE_DATABASE.pagila.address on store.address_id = address.address_id
+left join AIRBYTE_DATABASE.pagila.city on address.city_id = city.city_id
+left join AIRBYTE_DATABASE.pagila.country on city.country_id = country.country_id
+left join AIRBYTE_DATABASE.pagila.staff on staff.staff_id = store.manager_staff_id
+  )
+/* run by JVEKEMANS */;
+10:12:18.784976 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+10:12:18.971715 [info ] [Thread-3  ]: 3 of 11 OK created view model PAGILA_staging.stg_pagila_film.................... [[32mSUCCESS 1[0m in 2.70s]
+10:12:18.972406 [debug] [Thread-3  ]: Finished running node model.AIRBYTE_DBT_DEMO.stg_pagila_film
+10:12:18.972828 [debug] [Thread-3  ]: Began running node model.AIRBYTE_DBT_DEMO.dim_customer
+10:12:18.973540 [info ] [Thread-3  ]: 7 of 11 START table model PAGILA_data_mart.dim_customer......................... [RUN]
+10:12:18.974514 [debug] [Thread-3  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.dim_customer"
+10:12:18.974879 [debug] [Thread-3  ]: Began compiling node model.AIRBYTE_DBT_DEMO.dim_customer
+10:12:18.975165 [debug] [Thread-3  ]: Compiling model.AIRBYTE_DBT_DEMO.dim_customer
+10:12:18.982715 [debug] [Thread-3  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.dim_customer"
+10:12:18.984720 [debug] [Thread-3  ]: finished collecting timing info
+10:12:18.986182 [debug] [Thread-3  ]: Began executing node model.AIRBYTE_DBT_DEMO.dim_customer
+10:12:19.036465 [debug] [Thread-3  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.dim_customer"
+10:12:19.086427 [debug] [Thread-3  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.dim_customer"
+10:12:19.093184 [info ] [Thread-4  ]: 4 of 11 OK created view model PAGILA_staging.stg_pagila_sales................... [[32mSUCCESS 1[0m in 2.82s]
+10:12:19.098841 [debug] [Thread-3  ]: On model.AIRBYTE_DBT_DEMO.dim_customer: create or replace transient table AIRBYTE_DATABASE.PAGILA_data_mart.dim_customer  as
+      (SELECT *
+FROM AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_customer
+      )
+/* run by JVEKEMANS */;
+10:12:19.140569 [debug] [Thread-4  ]: Finished running node model.AIRBYTE_DBT_DEMO.stg_pagila_sales
+10:12:19.146121 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+10:12:19.172206 [debug] [Thread-4  ]: Began running node model.AIRBYTE_DBT_DEMO.dim_film
+10:12:19.206280 [info ] [Thread-4  ]: 8 of 11 START table model PAGILA_data_mart.dim_film............................. [RUN]
+10:12:19.207209 [debug] [Thread-4  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.dim_film"
+10:12:19.207410 [debug] [Thread-4  ]: Began compiling node model.AIRBYTE_DBT_DEMO.dim_film
+10:12:19.207595 [debug] [Thread-4  ]: Compiling model.AIRBYTE_DBT_DEMO.dim_film
+10:12:19.214305 [debug] [Thread-4  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.dim_film"
+10:12:19.216478 [debug] [Thread-4  ]: finished collecting timing info
+10:12:19.221632 [debug] [Thread-4  ]: Began executing node model.AIRBYTE_DBT_DEMO.dim_film
+10:12:19.227312 [debug] [Thread-4  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.dim_film"
+10:12:19.229126 [debug] [Thread-4  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.dim_film"
+10:12:19.229498 [debug] [Thread-4  ]: On model.AIRBYTE_DBT_DEMO.dim_film: create or replace transient table AIRBYTE_DATABASE.PAGILA_data_mart.dim_film  as
+      (SELECT *
+FROM AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_film
+      )
+/* run by JVEKEMANS */;
+10:12:19.230138 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+10:12:19.326860 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.93 seconds
+10:12:19.328143 [debug] [Thread-1  ]: finished collecting timing info
+10:12:19.328458 [debug] [Thread-1  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_staff: Close
+10:12:19.569028 [info ] [Thread-1  ]: 5 of 11 OK created view model PAGILA_staging.stg_pagila_staff................... [[32mSUCCESS 1[0m in 1.20s]
+10:12:19.569788 [debug] [Thread-1  ]: Finished running node model.AIRBYTE_DBT_DEMO.stg_pagila_staff
+10:12:19.595839 [debug] [Thread-1  ]: Began running node model.AIRBYTE_DBT_DEMO.dim_staff
+10:12:19.617080 [info ] [Thread-1  ]: 9 of 11 START table model PAGILA_data_mart.dim_staff............................ [RUN]
+10:12:19.623263 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.dim_staff"
+10:12:19.649554 [debug] [Thread-1  ]: Began compiling node model.AIRBYTE_DBT_DEMO.dim_staff
+10:12:19.652127 [debug] [Thread-1  ]: Compiling model.AIRBYTE_DBT_DEMO.dim_staff
+10:12:19.676287 [debug] [Thread-1  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.dim_staff"
+10:12:19.698315 [debug] [Thread-1  ]: finished collecting timing info
+10:12:19.703778 [debug] [Thread-1  ]: Began executing node model.AIRBYTE_DBT_DEMO.dim_staff
+10:12:19.706600 [debug] [Thread-1  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.dim_staff"
+10:12:19.739486 [debug] [Thread-1  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.dim_staff"
+10:12:19.755870 [debug] [Thread-1  ]: On model.AIRBYTE_DBT_DEMO.dim_staff: create or replace transient table AIRBYTE_DATABASE.PAGILA_data_mart.dim_staff  as
+      (SELECT *
+FROM AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_staff
+      )
+/* run by JVEKEMANS */;
+10:12:19.777228 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:12:19.809881 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.02 seconds
+10:12:19.812735 [debug] [Thread-2  ]: finished collecting timing info
+10:12:19.819571 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_store: Close
+10:12:20.030435 [info ] [Thread-2  ]: 6 of 11 OK created view model PAGILA_staging.stg_pagila_store................... [[32mSUCCESS 1[0m in 1.29s]
+10:12:20.031118 [debug] [Thread-2  ]: Finished running node model.AIRBYTE_DBT_DEMO.stg_pagila_store
+10:12:20.033623 [debug] [Thread-2  ]: Began running node model.AIRBYTE_DBT_DEMO.dim_store
+10:12:20.034398 [info ] [Thread-2  ]: 10 of 11 START table model PAGILA_data_mart.dim_store........................... [RUN]
+10:12:20.035249 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.dim_store"
+10:12:20.035549 [debug] [Thread-2  ]: Began compiling node model.AIRBYTE_DBT_DEMO.dim_store
+10:12:20.035796 [debug] [Thread-2  ]: Compiling model.AIRBYTE_DBT_DEMO.dim_store
+10:12:20.039289 [debug] [Thread-2  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.dim_store"
+10:12:20.040304 [debug] [Thread-2  ]: finished collecting timing info
+10:12:20.040539 [debug] [Thread-2  ]: Began executing node model.AIRBYTE_DBT_DEMO.dim_store
+10:12:20.045324 [debug] [Thread-2  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.dim_store"
+10:12:20.046069 [debug] [Thread-2  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.dim_store"
+10:12:20.046224 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.dim_store: create or replace transient table AIRBYTE_DATABASE.PAGILA_data_mart.dim_store  as
+      (SELECT *
+FROM AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_store
+      )
+/* run by JVEKEMANS */;
+10:12:20.046333 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+10:12:21.181128 [debug] [Thread-4  ]: Snowflake adapter: Snowflake query id: 01a3b584-3201-8e9f-0000-1afd0261c3e2
+10:12:21.181414 [debug] [Thread-4  ]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+10:12:21.181746 [debug] [Thread-4  ]: finished collecting timing info
+10:12:21.181954 [debug] [Thread-4  ]: On model.AIRBYTE_DBT_DEMO.dim_film: Close
+10:12:21.224072 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01a3b584-3201-8ede-0000-1afd0261b372
+10:12:21.224662 [debug] [Thread-3  ]: Snowflake adapter: Snowflake query id: 01a3b584-3201-8ede-0000-1afd0261b36e
+10:12:21.224877 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+10:12:21.225099 [debug] [Thread-3  ]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+10:12:21.225551 [debug] [Thread-1  ]: finished collecting timing info
+10:12:21.226101 [debug] [Thread-3  ]: finished collecting timing info
+10:12:21.226514 [debug] [Thread-1  ]: On model.AIRBYTE_DBT_DEMO.dim_staff: Close
+10:12:21.226950 [debug] [Thread-3  ]: On model.AIRBYTE_DBT_DEMO.dim_customer: Close
+10:12:21.386643 [debug] [Thread-4  ]: Database Error in model dim_film (models/marts/dimensions/dim_film/dim_film.sql)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled SQL at target/run/AIRBYTE_DBT_DEMO/models/marts/dimensions/dim_film/dim_film.sql
+10:12:21.387065 [error] [Thread-4  ]: 8 of 11 ERROR creating table model PAGILA_data_mart.dim_film.................... [[31mERROR[0m in 2.18s]
+10:12:21.387275 [debug] [Thread-4  ]: Finished running node model.AIRBYTE_DBT_DEMO.dim_film
+10:12:21.434053 [debug] [Thread-1  ]: Database Error in model dim_staff (models/marts/dimensions/dim_staff/dim_staff.sql)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled SQL at target/run/AIRBYTE_DBT_DEMO/models/marts/dimensions/dim_staff/dim_staff.sql
+10:12:21.434856 [error] [Thread-1  ]: 9 of 11 ERROR creating table model PAGILA_data_mart.dim_staff................... [[31mERROR[0m in 1.81s]
+10:12:21.435440 [debug] [Thread-1  ]: Finished running node model.AIRBYTE_DBT_DEMO.dim_staff
+10:12:21.437937 [debug] [Thread-3  ]: Database Error in model dim_customer (models/marts/dimensions/dim_customer/dim_customer.sql)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled SQL at target/run/AIRBYTE_DBT_DEMO/models/marts/dimensions/dim_customer/dim_customer.sql
+10:12:21.438321 [error] [Thread-3  ]: 7 of 11 ERROR creating table model PAGILA_data_mart.dim_customer................ [[31mERROR[0m in 2.46s]
+10:12:21.438542 [debug] [Thread-3  ]: Finished running node model.AIRBYTE_DBT_DEMO.dim_customer
+10:12:21.652645 [debug] [Thread-2  ]: Snowflake adapter: Snowflake query id: 01a3b584-3201-8e9f-0000-1afd0261c3e6
+10:12:21.653019 [debug] [Thread-2  ]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+10:12:21.653413 [debug] [Thread-2  ]: finished collecting timing info
+10:12:21.653707 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.dim_store: Close
+10:12:21.852588 [debug] [Thread-2  ]: Database Error in model dim_store (models/marts/dimensions/dim_store/dim_store.sql)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled SQL at target/run/AIRBYTE_DBT_DEMO/models/marts/dimensions/dim_store/dim_store.sql
+10:12:21.853376 [error] [Thread-2  ]: 10 of 11 ERROR creating table model PAGILA_data_mart.dim_store.................. [[31mERROR[0m in 1.82s]
+10:12:21.853931 [debug] [Thread-2  ]: Finished running node model.AIRBYTE_DBT_DEMO.dim_store
+10:12:21.855248 [debug] [Thread-4  ]: Began running node model.AIRBYTE_DBT_DEMO.fct_sales
+10:12:21.855454 [info ] [Thread-4  ]: 11 of 11 SKIP relation PAGILA_data_mart.fct_sales............................... [[33mSKIP[0m]
+10:12:21.855639 [debug] [Thread-4  ]: Finished running node model.AIRBYTE_DBT_DEMO.fct_sales
+10:12:21.856906 [debug] [MainThread]: Acquiring new snowflake connection "master"
+10:12:21.857309 [info ] [MainThread]: 
+10:12:21.857510 [info ] [MainThread]: Finished running 6 table models, 5 view models in 10.75s.
+10:12:21.857656 [debug] [MainThread]: Connection 'master' was properly closed.
+10:12:21.857784 [debug] [MainThread]: Connection 'model.AIRBYTE_DBT_DEMO.dim_staff' was properly closed.
+10:12:21.857866 [debug] [MainThread]: Connection 'model.AIRBYTE_DBT_DEMO.dim_store' was properly closed.
+10:12:21.857941 [debug] [MainThread]: Connection 'model.AIRBYTE_DBT_DEMO.dim_customer' was properly closed.
+10:12:21.858016 [debug] [MainThread]: Connection 'model.AIRBYTE_DBT_DEMO.dim_film' was properly closed.
+10:12:21.879823 [info ] [MainThread]: 
+10:12:21.880250 [info ] [MainThread]: [31mCompleted with 5 errors and 0 warnings:[0m
+10:12:21.880824 [info ] [MainThread]: 
+10:12:21.881259 [error] [MainThread]: [33mDatabase Error in model dim_date (models/marts/dimensions/dim_date/dim_date.sql)[0m
+10:12:21.881591 [error] [MainThread]:   000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+10:12:21.881909 [error] [MainThread]:   
+10:12:21.882236 [info ] [MainThread]: 
+10:12:21.882699 [error] [MainThread]: [33mDatabase Error in model dim_film (models/marts/dimensions/dim_film/dim_film.sql)[0m
+10:12:21.883434 [error] [MainThread]:   000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+10:12:21.883758 [error] [MainThread]:   
+10:12:21.884030 [error] [MainThread]:   compiled SQL at target/run/AIRBYTE_DBT_DEMO/models/marts/dimensions/dim_film/dim_film.sql
+10:12:21.884325 [info ] [MainThread]: 
+10:12:21.884708 [error] [MainThread]: [33mDatabase Error in model dim_staff (models/marts/dimensions/dim_staff/dim_staff.sql)[0m
+10:12:21.884993 [error] [MainThread]:   000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+10:12:21.885258 [error] [MainThread]:   
+10:12:21.885540 [error] [MainThread]:   compiled SQL at target/run/AIRBYTE_DBT_DEMO/models/marts/dimensions/dim_staff/dim_staff.sql
+10:12:21.885852 [info ] [MainThread]: 
+10:12:21.886167 [error] [MainThread]: [33mDatabase Error in model dim_customer (models/marts/dimensions/dim_customer/dim_customer.sql)[0m
+10:12:21.886458 [error] [MainThread]:   000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+10:12:21.886756 [error] [MainThread]:   
+10:12:21.887116 [error] [MainThread]:   compiled SQL at target/run/AIRBYTE_DBT_DEMO/models/marts/dimensions/dim_customer/dim_customer.sql
+10:12:21.887488 [info ] [MainThread]: 
+10:12:21.887888 [error] [MainThread]: [33mDatabase Error in model dim_store (models/marts/dimensions/dim_store/dim_store.sql)[0m
+10:12:21.888262 [error] [MainThread]:   000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+10:12:21.888535 [error] [MainThread]:   
+10:12:21.888863 [error] [MainThread]:   compiled SQL at target/run/AIRBYTE_DBT_DEMO/models/marts/dimensions/dim_store/dim_store.sql
+10:12:21.889206 [info ] [MainThread]: 
+10:12:21.889524 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=5 SKIP=1 TOTAL=11
+
+
+============================== 2022-04-19 10:29:07.121102 | 576bb552-4fb3-4d7c-8cb2-5c5ae5b0a377 ==============================
+10:29:07.121102 [info ] [MainThread]: Running with dbt=1.0.4
+10:29:07.121891 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/root/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+10:29:07.122058 [debug] [MainThread]: Tracking: do not track
+10:29:07.169267 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+10:29:07.254276 [debug] [MainThread]: Parsing tests/generic/basic_check_email.sql
+10:29:07.255052 [debug] [MainThread]: Parsing macros/adapters.sql
+10:29:07.285646 [debug] [MainThread]: Parsing macros/catalog.sql
+10:29:07.287202 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+10:29:07.294496 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+10:29:07.297703 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+10:29:07.302077 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+10:29:07.302921 [debug] [MainThread]: Parsing macros/materializations/table.sql
+10:29:07.305518 [debug] [MainThread]: Parsing macros/materializations/view.sql
+10:29:07.306633 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+10:29:07.314826 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+10:29:07.317306 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+10:29:07.319565 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+10:29:07.325465 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+10:29:07.329146 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+10:29:07.336871 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+10:29:07.338698 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+10:29:07.345446 [debug] [MainThread]: Parsing macros/etc/statement.sql
+10:29:07.349177 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+10:29:07.350360 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+10:29:07.350829 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+10:29:07.351517 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+10:29:07.352076 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+10:29:07.353283 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+10:29:07.354700 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+10:29:07.356722 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+10:29:07.358609 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+10:29:07.361778 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+10:29:07.365580 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+10:29:07.374041 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+10:29:07.375651 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+10:29:07.384737 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+10:29:07.396700 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+10:29:07.399335 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+10:29:07.405279 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+10:29:07.407619 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+10:29:07.409573 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+10:29:07.410640 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+10:29:07.416359 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+10:29:07.429014 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+10:29:07.434393 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+10:29:07.442953 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+10:29:07.452251 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+10:29:07.453563 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+10:29:07.467771 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+10:29:07.469310 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+10:29:07.473091 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+10:29:07.474598 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+10:29:07.477092 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_ephemeral.sql
+10:29:07.478718 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_relation.sql
+10:29:07.479659 [debug] [MainThread]: Parsing macros/cross_db_utils/any_value.sql
+10:29:07.480712 [debug] [MainThread]: Parsing macros/cross_db_utils/bool_or.sql
+10:29:07.481981 [debug] [MainThread]: Parsing macros/cross_db_utils/cast_bool_to_text.sql
+10:29:07.483234 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
+10:29:07.484055 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
+10:29:07.486794 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
+10:29:07.491777 [debug] [MainThread]: Parsing macros/cross_db_utils/date_trunc.sql
+10:29:07.492996 [debug] [MainThread]: Parsing macros/cross_db_utils/dateadd.sql
+10:29:07.495302 [debug] [MainThread]: Parsing macros/cross_db_utils/datediff.sql
+10:29:07.502999 [debug] [MainThread]: Parsing macros/cross_db_utils/escape_single_quotes.sql
+10:29:07.504568 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
+10:29:07.505422 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
+10:29:07.506561 [debug] [MainThread]: Parsing macros/cross_db_utils/identifier.sql
+10:29:07.507979 [debug] [MainThread]: Parsing macros/cross_db_utils/intersect.sql
+10:29:07.508839 [debug] [MainThread]: Parsing macros/cross_db_utils/last_day.sql
+10:29:07.511827 [debug] [MainThread]: Parsing macros/cross_db_utils/length.sql
+10:29:07.512896 [debug] [MainThread]: Parsing macros/cross_db_utils/listagg.sql
+10:29:07.519876 [debug] [MainThread]: Parsing macros/cross_db_utils/literal.sql
+10:29:07.520694 [debug] [MainThread]: Parsing macros/cross_db_utils/position.sql
+10:29:07.521931 [debug] [MainThread]: Parsing macros/cross_db_utils/replace.sql
+10:29:07.522964 [debug] [MainThread]: Parsing macros/cross_db_utils/right.sql
+10:29:07.524863 [debug] [MainThread]: Parsing macros/cross_db_utils/safe_cast.sql
+10:29:07.526381 [debug] [MainThread]: Parsing macros/cross_db_utils/split_part.sql
+10:29:07.527886 [debug] [MainThread]: Parsing macros/cross_db_utils/width_bucket.sql
+10:29:07.531945 [debug] [MainThread]: Parsing macros/generic_tests/accepted_range.sql
+10:29:07.533987 [debug] [MainThread]: Parsing macros/generic_tests/at_least_one.sql
+10:29:07.535085 [debug] [MainThread]: Parsing macros/generic_tests/cardinality_equality.sql
+10:29:07.536892 [debug] [MainThread]: Parsing macros/generic_tests/equal_rowcount.sql
+10:29:07.538504 [debug] [MainThread]: Parsing macros/generic_tests/equality.sql
+10:29:07.541691 [debug] [MainThread]: Parsing macros/generic_tests/expression_is_true.sql
+10:29:07.543326 [debug] [MainThread]: Parsing macros/generic_tests/fewer_rows_than.sql
+10:29:07.544623 [debug] [MainThread]: Parsing macros/generic_tests/mutually_exclusive_ranges.sql
+10:29:07.551139 [debug] [MainThread]: Parsing macros/generic_tests/not_accepted_values.sql
+10:29:07.552878 [debug] [MainThread]: Parsing macros/generic_tests/not_constant.sql
+10:29:07.553900 [debug] [MainThread]: Parsing macros/generic_tests/not_null_proportion.sql
+10:29:07.555695 [debug] [MainThread]: Parsing macros/generic_tests/recency.sql
+10:29:07.557181 [debug] [MainThread]: Parsing macros/generic_tests/relationships_where.sql
+10:29:07.559162 [debug] [MainThread]: Parsing macros/generic_tests/sequential_values.sql
+10:29:07.561515 [debug] [MainThread]: Parsing macros/generic_tests/test_not_null_where.sql
+10:29:07.562712 [debug] [MainThread]: Parsing macros/generic_tests/test_unique_where.sql
+10:29:07.563883 [debug] [MainThread]: Parsing macros/generic_tests/unique_combination_of_columns.sql
+10:29:07.566191 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+10:29:07.567116 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+10:29:07.568033 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+10:29:07.569011 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+10:29:07.569992 [debug] [MainThread]: Parsing macros/materializations/insert_by_period_materialization.sql
+10:29:07.589277 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+10:29:07.592860 [debug] [MainThread]: Parsing macros/sql/deduplicate.sql
+10:29:07.595533 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+10:29:07.598991 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+10:29:07.603827 [debug] [MainThread]: Parsing macros/sql/get_filtered_columns_in_relation.sql
+10:29:07.606344 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+10:29:07.608400 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+10:29:07.611254 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+10:29:07.614084 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+10:29:07.615308 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+10:29:07.620427 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+10:29:07.622013 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+10:29:07.623162 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+10:29:07.627918 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+10:29:07.629309 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+10:29:07.630653 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+10:29:07.634260 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+10:29:07.635655 [debug] [MainThread]: Parsing macros/sql/star.sql
+10:29:07.638496 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+10:29:07.641736 [debug] [MainThread]: Parsing macros/sql/union.sql
+10:29:07.650408 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+10:29:07.656988 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+10:29:07.658642 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+10:29:07.660012 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+10:29:07.662166 [debug] [MainThread]: Parsing macros/get_base_dates.sql
+10:29:07.666518 [debug] [MainThread]: Parsing macros/get_date_dimension.sql
+10:29:07.684616 [debug] [MainThread]: Parsing macros/calendar_date/convert_timezone.sql
+10:29:07.688902 [debug] [MainThread]: Parsing macros/calendar_date/date_part.sql
+10:29:07.690097 [debug] [MainThread]: Parsing macros/calendar_date/day_name.sql
+10:29:07.692721 [debug] [MainThread]: Parsing macros/calendar_date/day_of_month.sql
+10:29:07.693574 [debug] [MainThread]: Parsing macros/calendar_date/day_of_week.sql
+10:29:07.699380 [debug] [MainThread]: Parsing macros/calendar_date/day_of_year.sql
+10:29:07.701013 [debug] [MainThread]: Parsing macros/calendar_date/from_unixtimestamp.sql
+10:29:07.705434 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_end.sql
+10:29:07.707318 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_of_year.sql
+10:29:07.709600 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_start.sql
+10:29:07.711795 [debug] [MainThread]: Parsing macros/calendar_date/last_month.sql
+10:29:07.712255 [debug] [MainThread]: Parsing macros/calendar_date/last_month_name.sql
+10:29:07.712860 [debug] [MainThread]: Parsing macros/calendar_date/last_month_number.sql
+10:29:07.713387 [debug] [MainThread]: Parsing macros/calendar_date/last_week.sql
+10:29:07.713833 [debug] [MainThread]: Parsing macros/calendar_date/month_name.sql
+10:29:07.716277 [debug] [MainThread]: Parsing macros/calendar_date/n_days_ago.sql
+10:29:07.717168 [debug] [MainThread]: Parsing macros/calendar_date/n_days_away.sql
+10:29:07.717732 [debug] [MainThread]: Parsing macros/calendar_date/n_months_ago.sql
+10:29:07.718509 [debug] [MainThread]: Parsing macros/calendar_date/n_months_away.sql
+10:29:07.719301 [debug] [MainThread]: Parsing macros/calendar_date/n_weeks_ago.sql
+10:29:07.720134 [debug] [MainThread]: Parsing macros/calendar_date/n_weeks_away.sql
+10:29:07.720887 [debug] [MainThread]: Parsing macros/calendar_date/next_month.sql
+10:29:07.721359 [debug] [MainThread]: Parsing macros/calendar_date/next_month_name.sql
+10:29:07.722096 [debug] [MainThread]: Parsing macros/calendar_date/next_month_number.sql
+10:29:07.722633 [debug] [MainThread]: Parsing macros/calendar_date/next_week.sql
+10:29:07.723085 [debug] [MainThread]: Parsing macros/calendar_date/now.sql
+10:29:07.723555 [debug] [MainThread]: Parsing macros/calendar_date/periods_since.sql
+10:29:07.724149 [debug] [MainThread]: Parsing macros/calendar_date/to_unixtimestamp.sql
+10:29:07.725505 [debug] [MainThread]: Parsing macros/calendar_date/today.sql
+10:29:07.725952 [debug] [MainThread]: Parsing macros/calendar_date/tomorrow.sql
+10:29:07.726459 [debug] [MainThread]: Parsing macros/calendar_date/week_end.sql
+10:29:07.728401 [debug] [MainThread]: Parsing macros/calendar_date/week_of_year.sql
+10:29:07.729918 [debug] [MainThread]: Parsing macros/calendar_date/week_start.sql
+10:29:07.732322 [debug] [MainThread]: Parsing macros/calendar_date/yesterday.sql
+10:29:07.732853 [debug] [MainThread]: Parsing macros/fiscal_date/get_fiscal_periods.sql
+10:29:07.734185 [debug] [MainThread]: Parsing macros/fiscal_date/get_fiscal_year_dates.sql
+10:29:08.100929 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_customer/dim_customer.sql
+10:29:08.111760 [debug] [MainThread]: 1603: static parser failed on marts/dimensions/dim_date/dim_date.sql
+10:29:08.249950 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/dimensions/dim_date/dim_date.sql
+10:29:08.251006 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_film/dim_film.sql
+10:29:08.252965 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_staff/dim_staff.sql
+10:29:08.254920 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_store/dim_store.sql
+10:29:08.257415 [debug] [MainThread]: 1699: static parser successfully parsed marts/facts/fct_sales/fct_sales.sql
+10:29:08.259760 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_customer.sql
+10:29:08.262123 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_film.sql
+10:29:08.264646 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_staff.sql
+10:29:08.267035 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_store.sql
+10:29:08.269382 [debug] [MainThread]: 1699: static parser successfully parsed staging/facts/stg_pagila_sales.sql
+10:29:08.449315 [info ] [MainThread]: Found 11 models, 18 tests, 0 snapshots, 0 analyses, 486 macros, 0 operations, 0 seed files, 16 sources, 0 exposures, 0 metrics
+10:29:08.451447 [info ] [MainThread]: 
+10:29:08.451876 [debug] [MainThread]: Acquiring new snowflake connection "master"
+10:29:08.453305 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+10:29:08.453970 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+10:29:08.466694 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+10:29:08.471737 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+10:29:08.472174 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+/* run by JVEKEMANS */
+10:29:08.472480 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+/* run by JVEKEMANS */
+10:29:08.472710 [debug] [ThreadPool]: Opening a new connection, currently in state init
+10:29:08.472945 [debug] [ThreadPool]: Opening a new connection, currently in state init
+10:29:10.212068 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.74 seconds
+10:29:10.215741 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+10:29:10.220802 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.75 seconds
+10:29:10.223038 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+10:29:10.425308 [debug] [ThreadPool]: Acquiring new snowflake connection "create_AIRBYTE_DATABASE_PAGILA_staging"
+10:29:10.425791 [debug] [ThreadPool]: Acquiring new snowflake connection "create_AIRBYTE_DATABASE_PAGILA_data_mart"
+10:29:10.426122 [debug] [ThreadPool]: Acquiring new snowflake connection "create_AIRBYTE_DATABASE_PAGILA_staging"
+10:29:10.426383 [debug] [ThreadPool]: Acquiring new snowflake connection "create_AIRBYTE_DATABASE_PAGILA_data_mart"
+10:29:10.426648 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='airbyte_database', schema='pagila_staging', identifier=None)"
+10:29:10.426858 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='airbyte_database', schema='pagila_data_mart', identifier=None)"
+10:29:10.443187 [debug] [ThreadPool]: Using snowflake connection "create_AIRBYTE_DATABASE_PAGILA_staging"
+10:29:10.445820 [debug] [ThreadPool]: On create_AIRBYTE_DATABASE_PAGILA_staging: create schema if not exists AIRBYTE_DATABASE.PAGILA_staging
+/* run by JVEKEMANS */
+10:29:10.445334 [debug] [ThreadPool]: Using snowflake connection "create_AIRBYTE_DATABASE_PAGILA_data_mart"
+10:29:10.446100 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:29:10.446459 [debug] [ThreadPool]: On create_AIRBYTE_DATABASE_PAGILA_data_mart: create schema if not exists AIRBYTE_DATABASE.PAGILA_data_mart
+/* run by JVEKEMANS */
+10:29:10.451481 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:29:11.627985 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01a3b595-3201-8e9f-0000-1afd0261c84e
+10:29:11.628359 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003041 (42710): SQL compilation error:
+Schema 'PAGILA_DATA_MART' already exists, but current role has no privileges on it. If this is unexpected and you cannot resolve this problem, contact your system administrator. ACCOUNTADMIN role may be required to manage the privileges on the object.
+10:29:11.628781 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+10:29:11.629013 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+10:29:11.629287 [debug] [ThreadPool]: On create_AIRBYTE_DATABASE_PAGILA_data_mart: Close
+10:29:11.648950 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01a3b595-3201-8e9f-0000-1afd0261c852
+10:29:11.649228 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003041 (42710): SQL compilation error:
+Schema 'PAGILA_STAGING' already exists, but current role has no privileges on it. If this is unexpected and you cannot resolve this problem, contact your system administrator. ACCOUNTADMIN role may be required to manage the privileges on the object.
+10:29:11.649501 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+10:29:11.649660 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+10:29:11.649867 [debug] [ThreadPool]: On create_AIRBYTE_DATABASE_PAGILA_staging: Close
+10:29:11.826218 [debug] [MainThread]: Connection 'master' was properly closed.
+10:29:11.826584 [debug] [MainThread]: Connection 'create_AIRBYTE_DATABASE_PAGILA_staging' was properly closed.
+10:29:11.826834 [debug] [MainThread]: Connection 'create_AIRBYTE_DATABASE_PAGILA_data_mart' was properly closed.
+
+
+============================== 2022-04-19 10:30:18.353305 | 8dac4a63-ea20-412e-8f82-e30e4b7a28b2 ==============================
+10:30:18.353305 [info ] [MainThread]: Running with dbt=1.0.4
+10:30:18.353800 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/root/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+10:30:18.353978 [debug] [MainThread]: Tracking: do not track
+10:30:18.392955 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+10:30:18.417872 [debug] [MainThread]: Parsing tests/generic/basic_check_email.sql
+10:30:18.418624 [debug] [MainThread]: Parsing macros/adapters.sql
+10:30:18.449309 [debug] [MainThread]: Parsing macros/catalog.sql
+10:30:18.450862 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+10:30:18.458172 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+10:30:18.461368 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+10:30:18.465807 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+10:30:18.466621 [debug] [MainThread]: Parsing macros/materializations/table.sql
+10:30:18.469260 [debug] [MainThread]: Parsing macros/materializations/view.sql
+10:30:18.470401 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+10:30:18.478439 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+10:30:18.480845 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+10:30:18.483040 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+10:30:18.488841 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+10:30:18.492480 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+10:30:18.500158 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+10:30:18.501946 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+10:30:18.508689 [debug] [MainThread]: Parsing macros/etc/statement.sql
+10:30:18.512434 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+10:30:18.513583 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+10:30:18.514027 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+10:30:18.514710 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+10:30:18.515252 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+10:30:18.516449 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+10:30:18.517840 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+10:30:18.519865 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+10:30:18.521773 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+10:30:18.524947 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+10:30:18.528906 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+10:30:18.537389 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+10:30:18.538642 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+10:30:18.547489 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+10:30:18.559797 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+10:30:18.562278 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+10:30:18.568203 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+10:30:18.570490 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+10:30:18.572427 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+10:30:18.573538 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+10:30:18.579230 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+10:30:18.591875 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+10:30:18.597245 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+10:30:18.605739 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+10:30:18.615134 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+10:30:18.616480 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+10:30:18.630729 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+10:30:18.632274 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+10:30:18.636059 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+10:30:18.637550 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+10:30:18.640059 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_ephemeral.sql
+10:30:18.641668 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_relation.sql
+10:30:18.642627 [debug] [MainThread]: Parsing macros/cross_db_utils/any_value.sql
+10:30:18.643667 [debug] [MainThread]: Parsing macros/cross_db_utils/bool_or.sql
+10:30:18.644949 [debug] [MainThread]: Parsing macros/cross_db_utils/cast_bool_to_text.sql
+10:30:18.646245 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
+10:30:18.647153 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
+10:30:18.649907 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
+10:30:18.654928 [debug] [MainThread]: Parsing macros/cross_db_utils/date_trunc.sql
+10:30:18.656157 [debug] [MainThread]: Parsing macros/cross_db_utils/dateadd.sql
+10:30:18.658467 [debug] [MainThread]: Parsing macros/cross_db_utils/datediff.sql
+10:30:18.666110 [debug] [MainThread]: Parsing macros/cross_db_utils/escape_single_quotes.sql
+10:30:18.667745 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
+10:30:18.668630 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
+10:30:18.669774 [debug] [MainThread]: Parsing macros/cross_db_utils/identifier.sql
+10:30:18.671127 [debug] [MainThread]: Parsing macros/cross_db_utils/intersect.sql
+10:30:18.671974 [debug] [MainThread]: Parsing macros/cross_db_utils/last_day.sql
+10:30:18.674995 [debug] [MainThread]: Parsing macros/cross_db_utils/length.sql
+10:30:18.676041 [debug] [MainThread]: Parsing macros/cross_db_utils/listagg.sql
+10:30:18.683032 [debug] [MainThread]: Parsing macros/cross_db_utils/literal.sql
+10:30:18.683812 [debug] [MainThread]: Parsing macros/cross_db_utils/position.sql
+10:30:18.685048 [debug] [MainThread]: Parsing macros/cross_db_utils/replace.sql
+10:30:18.686069 [debug] [MainThread]: Parsing macros/cross_db_utils/right.sql
+10:30:18.687941 [debug] [MainThread]: Parsing macros/cross_db_utils/safe_cast.sql
+10:30:18.689445 [debug] [MainThread]: Parsing macros/cross_db_utils/split_part.sql
+10:30:18.690931 [debug] [MainThread]: Parsing macros/cross_db_utils/width_bucket.sql
+10:30:18.694956 [debug] [MainThread]: Parsing macros/generic_tests/accepted_range.sql
+10:30:18.696975 [debug] [MainThread]: Parsing macros/generic_tests/at_least_one.sql
+10:30:18.697991 [debug] [MainThread]: Parsing macros/generic_tests/cardinality_equality.sql
+10:30:18.699585 [debug] [MainThread]: Parsing macros/generic_tests/equal_rowcount.sql
+10:30:18.701023 [debug] [MainThread]: Parsing macros/generic_tests/equality.sql
+10:30:18.704054 [debug] [MainThread]: Parsing macros/generic_tests/expression_is_true.sql
+10:30:18.705584 [debug] [MainThread]: Parsing macros/generic_tests/fewer_rows_than.sql
+10:30:18.706895 [debug] [MainThread]: Parsing macros/generic_tests/mutually_exclusive_ranges.sql
+10:30:18.713571 [debug] [MainThread]: Parsing macros/generic_tests/not_accepted_values.sql
+10:30:18.715353 [debug] [MainThread]: Parsing macros/generic_tests/not_constant.sql
+10:30:18.716368 [debug] [MainThread]: Parsing macros/generic_tests/not_null_proportion.sql
+10:30:18.718189 [debug] [MainThread]: Parsing macros/generic_tests/recency.sql
+10:30:18.719647 [debug] [MainThread]: Parsing macros/generic_tests/relationships_where.sql
+10:30:18.721542 [debug] [MainThread]: Parsing macros/generic_tests/sequential_values.sql
+10:30:18.723910 [debug] [MainThread]: Parsing macros/generic_tests/test_not_null_where.sql
+10:30:18.725094 [debug] [MainThread]: Parsing macros/generic_tests/test_unique_where.sql
+10:30:18.726282 [debug] [MainThread]: Parsing macros/generic_tests/unique_combination_of_columns.sql
+10:30:18.728596 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+10:30:18.729512 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+10:30:18.730411 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+10:30:18.731402 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+10:30:18.732381 [debug] [MainThread]: Parsing macros/materializations/insert_by_period_materialization.sql
+10:30:18.751757 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+10:30:18.755339 [debug] [MainThread]: Parsing macros/sql/deduplicate.sql
+10:30:18.758031 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+10:30:18.761541 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+10:30:18.766231 [debug] [MainThread]: Parsing macros/sql/get_filtered_columns_in_relation.sql
+10:30:18.768597 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+10:30:18.770523 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+10:30:18.773381 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+10:30:18.776234 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+10:30:18.777475 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+10:30:18.782569 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+10:30:18.783974 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+10:30:18.785079 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+10:30:18.789930 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+10:30:18.791457 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+10:30:18.792861 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+10:30:18.796469 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+10:30:18.797849 [debug] [MainThread]: Parsing macros/sql/star.sql
+10:30:18.800698 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+10:30:18.803628 [debug] [MainThread]: Parsing macros/sql/union.sql
+10:30:18.812233 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+10:30:18.818820 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+10:30:18.820605 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+10:30:18.821949 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+10:30:18.824075 [debug] [MainThread]: Parsing macros/get_base_dates.sql
+10:30:18.828423 [debug] [MainThread]: Parsing macros/get_date_dimension.sql
+10:30:18.846660 [debug] [MainThread]: Parsing macros/calendar_date/convert_timezone.sql
+10:30:18.851006 [debug] [MainThread]: Parsing macros/calendar_date/date_part.sql
+10:30:18.852238 [debug] [MainThread]: Parsing macros/calendar_date/day_name.sql
+10:30:18.854898 [debug] [MainThread]: Parsing macros/calendar_date/day_of_month.sql
+10:30:18.855771 [debug] [MainThread]: Parsing macros/calendar_date/day_of_week.sql
+10:30:18.861552 [debug] [MainThread]: Parsing macros/calendar_date/day_of_year.sql
+10:30:18.863124 [debug] [MainThread]: Parsing macros/calendar_date/from_unixtimestamp.sql
+10:30:18.867510 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_end.sql
+10:30:18.869401 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_of_year.sql
+10:30:18.871587 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_start.sql
+10:30:18.873822 [debug] [MainThread]: Parsing macros/calendar_date/last_month.sql
+10:30:18.874304 [debug] [MainThread]: Parsing macros/calendar_date/last_month_name.sql
+10:30:18.874908 [debug] [MainThread]: Parsing macros/calendar_date/last_month_number.sql
+10:30:18.875440 [debug] [MainThread]: Parsing macros/calendar_date/last_week.sql
+10:30:18.875885 [debug] [MainThread]: Parsing macros/calendar_date/month_name.sql
+10:30:18.878345 [debug] [MainThread]: Parsing macros/calendar_date/n_days_ago.sql
+10:30:18.879260 [debug] [MainThread]: Parsing macros/calendar_date/n_days_away.sql
+10:30:18.879845 [debug] [MainThread]: Parsing macros/calendar_date/n_months_ago.sql
+10:30:18.880627 [debug] [MainThread]: Parsing macros/calendar_date/n_months_away.sql
+10:30:18.881443 [debug] [MainThread]: Parsing macros/calendar_date/n_weeks_ago.sql
+10:30:18.882238 [debug] [MainThread]: Parsing macros/calendar_date/n_weeks_away.sql
+10:30:18.883000 [debug] [MainThread]: Parsing macros/calendar_date/next_month.sql
+10:30:18.883439 [debug] [MainThread]: Parsing macros/calendar_date/next_month_name.sql
+10:30:18.884139 [debug] [MainThread]: Parsing macros/calendar_date/next_month_number.sql
+10:30:18.884688 [debug] [MainThread]: Parsing macros/calendar_date/next_week.sql
+10:30:18.885128 [debug] [MainThread]: Parsing macros/calendar_date/now.sql
+10:30:18.885600 [debug] [MainThread]: Parsing macros/calendar_date/periods_since.sql
+10:30:18.886199 [debug] [MainThread]: Parsing macros/calendar_date/to_unixtimestamp.sql
+10:30:18.887567 [debug] [MainThread]: Parsing macros/calendar_date/today.sql
+10:30:18.888013 [debug] [MainThread]: Parsing macros/calendar_date/tomorrow.sql
+10:30:18.888516 [debug] [MainThread]: Parsing macros/calendar_date/week_end.sql
+10:30:18.890471 [debug] [MainThread]: Parsing macros/calendar_date/week_of_year.sql
+10:30:18.892101 [debug] [MainThread]: Parsing macros/calendar_date/week_start.sql
+10:30:18.894584 [debug] [MainThread]: Parsing macros/calendar_date/yesterday.sql
+10:30:18.895136 [debug] [MainThread]: Parsing macros/fiscal_date/get_fiscal_periods.sql
+10:30:18.896449 [debug] [MainThread]: Parsing macros/fiscal_date/get_fiscal_year_dates.sql
+10:30:19.258802 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_customer/dim_customer.sql
+10:30:19.269069 [debug] [MainThread]: 1603: static parser failed on marts/dimensions/dim_date/dim_date.sql
+10:30:19.404659 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/dimensions/dim_date/dim_date.sql
+10:30:19.405726 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_film/dim_film.sql
+10:30:19.407810 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_staff/dim_staff.sql
+10:30:19.409748 [debug] [MainThread]: 1699: static parser successfully parsed marts/dimensions/dim_store/dim_store.sql
+10:30:19.412270 [debug] [MainThread]: 1699: static parser successfully parsed marts/facts/fct_sales/fct_sales.sql
+10:30:19.416305 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_customer.sql
+10:30:19.419238 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_film.sql
+10:30:19.422575 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_staff.sql
+10:30:19.424953 [debug] [MainThread]: 1699: static parser successfully parsed staging/dimensions/stg_pagila_store.sql
+10:30:19.427299 [debug] [MainThread]: 1699: static parser successfully parsed staging/facts/stg_pagila_sales.sql
+10:30:19.603517 [info ] [MainThread]: Found 11 models, 18 tests, 0 snapshots, 0 analyses, 486 macros, 0 operations, 0 seed files, 16 sources, 0 exposures, 0 metrics
+10:30:19.605537 [info ] [MainThread]: 
+10:30:19.605977 [debug] [MainThread]: Acquiring new snowflake connection "master"
+10:30:19.607522 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+10:30:19.608109 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+10:30:19.644159 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+10:30:19.639294 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+10:30:19.644752 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+/* run by JVEKEMANS */
+10:30:19.645037 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+/* run by JVEKEMANS */
+10:30:19.645290 [debug] [ThreadPool]: Opening a new connection, currently in state init
+10:30:19.645583 [debug] [ThreadPool]: Opening a new connection, currently in state init
+10:30:21.026922 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.38 seconds
+10:30:21.029126 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+10:30:21.042179 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.4 seconds
+10:30:21.043440 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+10:30:21.217986 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_PAGILA_data_mart"
+10:30:21.218652 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_PAGILA_staging"
+10:30:21.236276 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_PAGILA_data_mart"
+10:30:21.236866 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_PAGILA_staging"
+10:30:21.237224 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_PAGILA_data_mart: show terse objects in AIRBYTE_DATABASE.PAGILA_data_mart
+/* run by JVEKEMANS */
+10:30:21.237647 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_PAGILA_staging: show terse objects in AIRBYTE_DATABASE.PAGILA_staging
+/* run by JVEKEMANS */
+10:30:21.238059 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:30:21.238430 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+10:30:22.362751 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.12 seconds
+10:30:22.366346 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_PAGILA_staging: Close
+10:30:22.500821 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.26 seconds
+10:30:22.502025 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_PAGILA_data_mart: Close
+10:30:22.686426 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+10:30:22.686934 [info ] [MainThread]: 
+10:30:22.692413 [debug] [Thread-1  ]: Began running node model.AIRBYTE_DBT_DEMO.dim_date
+10:30:22.692769 [debug] [Thread-2  ]: Began running node model.AIRBYTE_DBT_DEMO.stg_pagila_customer
+10:30:22.693834 [debug] [Thread-4  ]: Began running node model.AIRBYTE_DBT_DEMO.stg_pagila_sales
+10:30:22.694502 [info ] [Thread-1  ]: 1 of 11 START table model PAGILA_data_mart.dim_date............................. [RUN]
+10:30:22.695463 [debug] [Thread-3  ]: Began running node model.AIRBYTE_DBT_DEMO.stg_pagila_film
+10:30:22.696139 [info ] [Thread-2  ]: 2 of 11 START view model PAGILA_staging.stg_pagila_customer..................... [RUN]
+10:30:22.696858 [info ] [Thread-4  ]: 4 of 11 START view model PAGILA_staging.stg_pagila_sales........................ [RUN]
+10:30:22.697457 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.dim_date"
+10:30:22.697741 [info ] [Thread-3  ]: 3 of 11 START view model PAGILA_staging.stg_pagila_film......................... [RUN]
+10:30:22.698453 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_customer"
+10:30:22.698836 [debug] [Thread-4  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_sales"
+10:30:22.698979 [debug] [Thread-1  ]: Began compiling node model.AIRBYTE_DBT_DEMO.dim_date
+10:30:22.699835 [debug] [Thread-3  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_film"
+10:30:22.700215 [debug] [Thread-2  ]: Began compiling node model.AIRBYTE_DBT_DEMO.stg_pagila_customer
+10:30:22.700465 [debug] [Thread-4  ]: Began compiling node model.AIRBYTE_DBT_DEMO.stg_pagila_sales
+10:30:22.700640 [debug] [Thread-1  ]: Compiling model.AIRBYTE_DBT_DEMO.dim_date
+10:30:22.700805 [debug] [Thread-3  ]: Began compiling node model.AIRBYTE_DBT_DEMO.stg_pagila_film
+10:30:22.700975 [debug] [Thread-2  ]: Compiling model.AIRBYTE_DBT_DEMO.stg_pagila_customer
+10:30:22.701136 [debug] [Thread-4  ]: Compiling model.AIRBYTE_DBT_DEMO.stg_pagila_sales
+10:30:22.708128 [debug] [Thread-1  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.dim_date"
+10:30:22.708470 [debug] [Thread-3  ]: Compiling model.AIRBYTE_DBT_DEMO.stg_pagila_film
+10:30:22.718870 [debug] [Thread-2  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_customer"
+10:30:22.790967 [debug] [Thread-4  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_sales"
+10:30:22.791274 [debug] [Thread-1  ]: On model.AIRBYTE_DBT_DEMO.dim_date: select datediff(
+        day,
+        cast('2015-01-01' as 
+    timestamp_ntz
+),
+        cast('2022-12-31' as 
+    timestamp_ntz
+)
+        )
+/* run by JVEKEMANS */
+10:30:22.795308 [debug] [Thread-3  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_film"
+10:30:22.795852 [debug] [Thread-2  ]: finished collecting timing info
+10:30:22.796477 [debug] [Thread-4  ]: finished collecting timing info
+10:30:22.796735 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:30:22.797359 [debug] [Thread-2  ]: Began executing node model.AIRBYTE_DBT_DEMO.stg_pagila_customer
+10:30:22.797832 [debug] [Thread-4  ]: Began executing node model.AIRBYTE_DBT_DEMO.stg_pagila_sales
+10:30:22.799147 [debug] [Thread-3  ]: finished collecting timing info
+10:30:22.850033 [debug] [Thread-3  ]: Began executing node model.AIRBYTE_DBT_DEMO.stg_pagila_film
+10:30:22.875774 [debug] [Thread-2  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_customer"
+10:30:22.876535 [debug] [Thread-3  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_film"
+10:30:22.884275 [debug] [Thread-4  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_sales"
+10:30:22.887147 [debug] [Thread-2  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_customer"
+10:30:22.891783 [debug] [Thread-3  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_film"
+10:30:22.893098 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_customer: create or replace  view AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_customer 
+  
+   as (
+    WITH customer AS (
+	SELECT customer_id,
+		   store_id,
+		   first_name,
+		   last_name,
+		   email,
+		   active,
+		   create_date,
+		   address.address,
+		   address.district,
+		   address.postal_code,
+		   address.phone,
+		   city.city,
+		   country.country,
+		   customer.last_update
+	FROM AIRBYTE_DATABASE.pagila.customer
+	LEFT JOIN AIRBYTE_DATABASE.pagila.address ON address.address_id = customer.address_id
+	LEFT JOIN AIRBYTE_DATABASE.pagila.city ON address.city_id = city.city_id
+	LEFT JOIN AIRBYTE_DATABASE.pagila.country ON city.country_id = country.country_id
+)
+
+SELECT *
+FROM customer
+  )
+/* run by JVEKEMANS */;
+10:30:22.895315 [debug] [Thread-4  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_sales"
+10:30:22.895574 [debug] [Thread-3  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_film: create or replace  view AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_film 
+  
+   as (
+    with film as (
+select film.film_id,
+       title,
+       description,
+       release_year,
+       film.language_id,
+       film.original_language_id,
+       rental_duration,
+       rental_rate,
+       length,
+       replacement_cost,
+       rating,
+       special_features,
+       film.last_update,
+       language.name as language,
+       og_language.name as original_language,
+       category.name as category_name
+from AIRBYTE_DATABASE.pagila.film
+LEFT JOIN AIRBYTE_DATABASE.pagila.language on film.language_id = language.language_id
+LEFT JOIN AIRBYTE_DATABASE.pagila.language og_language on film.original_language_id = language.language_id
+LEFT JOIN AIRBYTE_DATABASE.pagila.film_category on film_category.film_id = film.film_id
+left join AIRBYTE_DATABASE.pagila.category  on category.category_id = film_category.category_id)
+
+select *
+from film
+  )
+/* run by JVEKEMANS */;
+10:30:22.895804 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+10:30:22.896009 [debug] [Thread-4  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_sales: create or replace  view AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_sales 
+  
+   as (
+    WITH sales
+AS (
+    SELECT payment_id,
+    payment.customer_id,
+    inventory.film_id,
+    inventory.store_id,
+    payment.staff_id,
+    payment.payment_date,
+    payment.amount
+    FROM AIRBYTE_DATABASE.pagila.payment
+    LEFT JOIN AIRBYTE_DATABASE.pagila.rental ON rental.rental_id = payment.rental_id
+    LEFT JOIN AIRBYTE_DATABASE.pagila.inventory ON inventory.inventory_id = rental.inventory_id
+)
+
+select * 
+from sales
+  )
+/* run by JVEKEMANS */;
+10:30:22.896267 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+10:30:22.900054 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+10:30:24.621922 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.73 seconds
+10:30:24.632736 [debug] [Thread-2  ]: finished collecting timing info
+10:30:24.633180 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_customer: Close
+10:30:24.690102 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.89 seconds
+10:30:24.707290 [debug] [Thread-1  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.dim_date"
+10:30:24.708815 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.81 seconds
+10:30:24.709416 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 1.81 seconds
+10:30:24.711589 [debug] [Thread-4  ]: finished collecting timing info
+10:30:24.711896 [debug] [Thread-1  ]: finished collecting timing info
+10:30:24.714447 [debug] [Thread-3  ]: finished collecting timing info
+10:30:24.714697 [debug] [Thread-4  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_sales: Close
+10:30:24.714869 [debug] [Thread-1  ]: Began executing node model.AIRBYTE_DBT_DEMO.dim_date
+10:30:24.715136 [debug] [Thread-3  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_film: Close
+10:30:24.763847 [debug] [Thread-1  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.dim_date"
+10:30:24.784329 [debug] [Thread-1  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.dim_date"
+10:30:24.784535 [debug] [Thread-1  ]: On model.AIRBYTE_DBT_DEMO.dim_date: create or replace transient table AIRBYTE_DATABASE.PAGILA_data_mart.dim_date  as
+      (with date_dim as(
+
+    
+with base_dates as (
+    
+    with date_spine as
+(
+
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+     + 
+    
+    p9.generated_number * power(2, 9)
+     + 
+    
+    p10.generated_number * power(2, 10)
+     + 
+    
+    p11.generated_number * power(2, 11)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+     cross join 
+    
+    p as p9
+     cross join 
+    
+    p as p10
+     cross join 
+    
+    p as p11
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 2921
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+    dateadd(
+        day,
+        row_number() over (order by 1) - 1,
+        cast('2015-01-01' as 
+    timestamp_ntz
+)
+        )
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast('2022-12-31' as 
+    timestamp_ntz
+)
+
+)
+
+select * from filtered
+
+
+
+)
+select
+    cast(d.date_day as 
+    timestamp_ntz
+) as date_day
+from
+    date_spine d
+
+
+),
+dates_with_prior_year_dates as (
+
+    select
+        cast(d.date_day as date) as date_day,
+        cast(
+
+    dateadd(
+        year,
+        -1,
+        d.date_day
+        )
+
+ as date) as prior_year_date_day,
+        cast(
+
+    dateadd(
+        day,
+        -364,
+        d.date_day
+        )
+
+ as date) as prior_year_over_year_date_day
+    from
+    	base_dates d
+
+)
+select
+    d.date_day,
+    cast(
+
+    dateadd(
+        day,
+        -1,
+        d.date_day
+        )
+
+ as date) as prior_date_day,
+    cast(
+
+    dateadd(
+        day,
+        1,
+        d.date_day
+        )
+
+ as date) as next_date_day,
+    d.prior_year_date_day as prior_year_date_day,
+    d.prior_year_over_year_date_day,
+    case
+            when date_part('dayofweek', d.date_day) = 7 then 1
+            else date_part('dayofweek', d.date_day) + 1
+        end as day_of_week,
+    date_part('dayofweekiso', d.date_day) as day_of_week_iso,
+    -- long version not implemented on Snowflake so we're doing it manually :/
+    case dayname(d.date_day)
+        when 'Mon' then 'Monday'
+        when 'Tue' then 'Tuesday'
+        when 'Wed' then 'Wednesday'
+        when 'Thu' then 'Thursday'
+        when 'Fri' then 'Friday'
+        when 'Sat' then 'Saturday'
+        when 'Sun' then 'Sunday'
+    end as day_of_week_name,
+    dayname(d.date_day) as day_of_week_name_short,
+    date_part('day', d.date_day) as day_of_month,
+    date_part('dayofyear', d.date_day) as day_of_year,
+
+    
+    
+    cast(
+
+    dateadd(
+        day,
+        -1 * (case
+            when date_part('dayofweek', d.date_day) = 7 then 1
+            else date_part('dayofweek', d.date_day) + 1
+        end - 1),
+        d.date_day
+        )
+
+ as date) as week_start_date,
+    cast(
+
+    dateadd(
+        day,
+        6,
+        
+    
+    cast(
+
+    dateadd(
+        day,
+        -1 * (case
+            when date_part('dayofweek', d.date_day) = 7 then 1
+            else date_part('dayofweek', d.date_day) + 1
+        end - 1),
+        d.date_day
+        )
+
+ as date)
+        )
+
+ as date) as week_end_date,
+    
+    
+    cast(
+
+    dateadd(
+        day,
+        -1 * (case
+            when date_part('dayofweek', d.prior_year_over_year_date_day) = 7 then 1
+            else date_part('dayofweek', d.prior_year_over_year_date_day) + 1
+        end - 1),
+        d.prior_year_over_year_date_day
+        )
+
+ as date) as prior_year_week_start_date,
+    cast(
+
+    dateadd(
+        day,
+        6,
+        
+    
+    cast(
+
+    dateadd(
+        day,
+        -1 * (case
+            when date_part('dayofweek', d.prior_year_over_year_date_day) = 7 then 1
+            else date_part('dayofweek', d.prior_year_over_year_date_day) + 1
+        end - 1),
+        d.prior_year_over_year_date_day
+        )
+
+ as date)
+        )
+
+ as date) as prior_year_week_end_date,
+    cast(date_part('week', d.date_day) as 
+    int
+) as week_of_year,
+
+    cast(date_trunc('week', d.date_day) as date) as iso_week_start_date,
+    cast(
+
+    dateadd(
+        day,
+        6,
+        cast(date_trunc('week', d.date_day) as date)
+        )
+
+ as date) as iso_week_end_date,
+    cast(date_trunc('week', d.prior_year_over_year_date_day) as date) as prior_year_iso_week_start_date,
+    cast(
+
+    dateadd(
+        day,
+        6,
+        cast(date_trunc('week', d.prior_year_over_year_date_day) as date)
+        )
+
+ as date) as prior_year_iso_week_end_date,
+    cast(date_part('weekiso', d.date_day) as 
+    int
+) as iso_week_of_year,
+
+    cast(date_part('week', d.prior_year_over_year_date_day) as 
+    int
+) as prior_year_week_of_year,
+    cast(date_part('weekiso', d.prior_year_over_year_date_day) as 
+    int
+) as prior_year_iso_week_of_year,
+
+    cast(date_part('month', d.date_day) as 
+    int
+) as month_of_year,
+    to_char(d.date_day, 'MMMM')  as month_name,
+    to_char(d.date_day, 'MON')  as month_name_short,
+
+    cast(date_trunc('month', d.date_day) as date) as month_start_date,
+    cast(cast(
+        
+
+    dateadd(
+        day,
+        -1,
+        
+
+    dateadd(
+        month,
+        1,
+        date_trunc('month', d.date_day)
+        )
+
+
+        )
+
+
+        as date) as date) as month_end_date,
+
+    cast(date_trunc('month', d.prior_year_date_day) as date) as prior_year_month_start_date,
+    cast(cast(
+        
+
+    dateadd(
+        day,
+        -1,
+        
+
+    dateadd(
+        month,
+        1,
+        date_trunc('month', d.prior_year_date_day)
+        )
+
+
+        )
+
+
+        as date) as date) as prior_year_month_end_date,
+
+    cast(date_part('quarter', d.date_day) as 
+    int
+) as quarter_of_year,
+    cast(date_trunc('quarter', d.date_day) as date) as quarter_start_date,
+    cast(cast(
+        
+
+    dateadd(
+        day,
+        -1,
+        
+
+    dateadd(
+        quarter,
+        1,
+        date_trunc('quarter', d.date_day)
+        )
+
+
+        )
+
+
+        as date) as date) as quarter_end_date,
+
+    cast(date_part('year', d.date_day) as 
+    int
+) as year_number,
+    cast(date_trunc('year', d.date_day) as date) as year_start_date,
+    cast(cast(
+        
+
+    dateadd(
+        day,
+        -1,
+        
+
+    dateadd(
+        year,
+        1,
+        date_trunc('year', d.date_day)
+        )
+
+
+        )
+
+
+        as date) as date) as year_end_date
+from
+    dates_with_prior_year_dates d
+order by 1
+
+
+)
+
+select row_number() over (order by date_day) as date_dim_id, date_dim.* from date_dim
+      )
+/* run by JVEKEMANS */;
+10:30:24.896044 [info ] [Thread-2  ]: 2 of 11 OK created view model PAGILA_staging.stg_pagila_customer................ [[32mSUCCESS 1[0m in 2.20s]
+10:30:24.896742 [debug] [Thread-2  ]: Finished running node model.AIRBYTE_DBT_DEMO.stg_pagila_customer
+10:30:24.897122 [debug] [Thread-2  ]: Began running node model.AIRBYTE_DBT_DEMO.stg_pagila_staff
+10:30:24.897916 [info ] [Thread-2  ]: 5 of 11 START view model PAGILA_staging.stg_pagila_staff........................ [RUN]
+10:30:24.898860 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_staff"
+10:30:24.899117 [debug] [Thread-2  ]: Began compiling node model.AIRBYTE_DBT_DEMO.stg_pagila_staff
+10:30:24.899302 [debug] [Thread-2  ]: Compiling model.AIRBYTE_DBT_DEMO.stg_pagila_staff
+10:30:24.903192 [debug] [Thread-2  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_staff"
+10:30:24.903547 [debug] [Thread-2  ]: finished collecting timing info
+10:30:24.903673 [debug] [Thread-2  ]: Began executing node model.AIRBYTE_DBT_DEMO.stg_pagila_staff
+10:30:24.907260 [debug] [Thread-2  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_staff"
+10:30:24.909469 [debug] [Thread-2  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_staff"
+10:30:24.909676 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_staff: create or replace  view AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_staff 
+  
+   as (
+    with staff as
+(select staff.staff_id,
+       first_name,
+       last_name,
+       staff.address_id,
+       picture,
+       email,
+       staff.store_id,
+       active,
+       username,
+       password,
+       staff.last_update,
+       address,
+       address2,
+       district,
+       address.city_id,
+       postal_code,
+       phone,
+       city,
+       city.country_id,
+       country
+from AIRBYTE_DATABASE.pagila.staff
+left join AIRBYTE_DATABASE.pagila.address on address.address_id = staff.address_id
+left join AIRBYTE_DATABASE.pagila.city on city.city_id = address.city_id
+left join AIRBYTE_DATABASE.pagila.country on country.country_id = city.country_id)
+
+select *
+from staff
+  )
+/* run by JVEKEMANS */;
+10:30:24.909795 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+10:30:24.949476 [info ] [Thread-4  ]: 4 of 11 OK created view model PAGILA_staging.stg_pagila_sales................... [[32mSUCCESS 1[0m in 2.25s]
+10:30:24.949984 [debug] [Thread-4  ]: Finished running node model.AIRBYTE_DBT_DEMO.stg_pagila_sales
+10:30:24.950324 [debug] [Thread-4  ]: Began running node model.AIRBYTE_DBT_DEMO.stg_pagila_store
+10:30:24.950995 [info ] [Thread-4  ]: 6 of 11 START view model PAGILA_staging.stg_pagila_store........................ [RUN]
+10:30:24.951657 [debug] [Thread-4  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_store"
+10:30:24.951973 [debug] [Thread-4  ]: Began compiling node model.AIRBYTE_DBT_DEMO.stg_pagila_store
+10:30:24.952226 [debug] [Thread-4  ]: Compiling model.AIRBYTE_DBT_DEMO.stg_pagila_store
+10:30:24.961744 [debug] [Thread-4  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_store"
+10:30:24.962213 [debug] [Thread-4  ]: finished collecting timing info
+10:30:24.962325 [debug] [Thread-4  ]: Began executing node model.AIRBYTE_DBT_DEMO.stg_pagila_store
+10:30:24.964704 [debug] [Thread-4  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.stg_pagila_store"
+10:30:24.965908 [debug] [Thread-4  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.stg_pagila_store"
+10:30:24.966088 [debug] [Thread-4  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_store: create or replace  view AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_store 
+  
+   as (
+    select store.store_id,
+       manager_staff_id,
+       store.address_id,
+       store.last_update,
+       address,
+       address2,
+       district,
+       address.city_id,
+       postal_code,
+       phone,
+       city,
+       city.country_id,
+       country
+from AIRBYTE_DATABASE.pagila.store
+left join AIRBYTE_DATABASE.pagila.address on store.address_id = address.address_id
+left join AIRBYTE_DATABASE.pagila.city on address.city_id = city.city_id
+left join AIRBYTE_DATABASE.pagila.country on city.country_id = country.country_id
+left join AIRBYTE_DATABASE.pagila.staff on staff.staff_id = store.manager_staff_id
+  )
+/* run by JVEKEMANS */;
+10:30:24.966203 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+10:30:25.017418 [info ] [Thread-3  ]: 3 of 11 OK created view model PAGILA_staging.stg_pagila_film.................... [[32mSUCCESS 1[0m in 2.32s]
+10:30:25.017963 [debug] [Thread-3  ]: Finished running node model.AIRBYTE_DBT_DEMO.stg_pagila_film
+10:30:25.018298 [debug] [Thread-3  ]: Began running node model.AIRBYTE_DBT_DEMO.dim_customer
+10:30:25.019130 [info ] [Thread-3  ]: 7 of 11 START table model PAGILA_data_mart.dim_customer......................... [RUN]
+10:30:25.019484 [debug] [Thread-3  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.dim_customer"
+10:30:25.019616 [debug] [Thread-3  ]: Began compiling node model.AIRBYTE_DBT_DEMO.dim_customer
+10:30:25.019725 [debug] [Thread-3  ]: Compiling model.AIRBYTE_DBT_DEMO.dim_customer
+10:30:25.022614 [debug] [Thread-3  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.dim_customer"
+10:30:25.022992 [debug] [Thread-3  ]: finished collecting timing info
+10:30:25.023115 [debug] [Thread-3  ]: Began executing node model.AIRBYTE_DBT_DEMO.dim_customer
+10:30:25.026185 [debug] [Thread-3  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.dim_customer"
+10:30:25.027413 [debug] [Thread-3  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.dim_customer"
+10:30:25.027550 [debug] [Thread-3  ]: On model.AIRBYTE_DBT_DEMO.dim_customer: create or replace transient table AIRBYTE_DATABASE.PAGILA_data_mart.dim_customer  as
+      (SELECT *
+FROM AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_customer
+      )
+/* run by JVEKEMANS */;
+10:30:25.027663 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+10:30:26.536574 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.63 seconds
+10:30:26.539249 [debug] [Thread-2  ]: finished collecting timing info
+10:30:26.539628 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_staff: Close
+10:30:26.557889 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.77 seconds
+10:30:26.567065 [debug] [Thread-1  ]: finished collecting timing info
+10:30:26.567421 [debug] [Thread-1  ]: On model.AIRBYTE_DBT_DEMO.dim_date: Close
+10:30:26.572183 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.61 seconds
+10:30:26.575338 [debug] [Thread-4  ]: finished collecting timing info
+10:30:26.575744 [debug] [Thread-4  ]: On model.AIRBYTE_DBT_DEMO.stg_pagila_store: Close
+10:30:26.739931 [info ] [Thread-2  ]: 5 of 11 OK created view model PAGILA_staging.stg_pagila_staff................... [[32mSUCCESS 1[0m in 1.84s]
+10:30:26.740667 [debug] [Thread-2  ]: Finished running node model.AIRBYTE_DBT_DEMO.stg_pagila_staff
+10:30:26.742323 [debug] [Thread-2  ]: Began running node model.AIRBYTE_DBT_DEMO.dim_film
+10:30:26.743533 [info ] [Thread-2  ]: 8 of 11 START table model PAGILA_data_mart.dim_film............................. [RUN]
+10:30:26.744427 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.dim_film"
+10:30:26.745180 [info ] [Thread-1  ]: 1 of 11 OK created table model PAGILA_data_mart.dim_date........................ [[32mSUCCESS 1[0m in 4.05s]
+10:30:26.745356 [debug] [Thread-2  ]: Began compiling node model.AIRBYTE_DBT_DEMO.dim_film
+10:30:26.745651 [debug] [Thread-1  ]: Finished running node model.AIRBYTE_DBT_DEMO.dim_date
+10:30:26.745770 [debug] [Thread-2  ]: Compiling model.AIRBYTE_DBT_DEMO.dim_film
+10:30:26.745925 [debug] [Thread-1  ]: Began running node model.AIRBYTE_DBT_DEMO.dim_staff
+10:30:26.748669 [info ] [Thread-1  ]: 9 of 11 START table model PAGILA_data_mart.dim_staff............................ [RUN]
+10:30:26.751161 [debug] [Thread-2  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.dim_film"
+10:30:26.751432 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.dim_staff"
+10:30:26.752046 [info ] [Thread-4  ]: 6 of 11 OK created view model PAGILA_staging.stg_pagila_store................... [[32mSUCCESS 1[0m in 1.80s]
+10:30:26.752393 [debug] [Thread-1  ]: Began compiling node model.AIRBYTE_DBT_DEMO.dim_staff
+10:30:26.752551 [debug] [Thread-2  ]: finished collecting timing info
+10:30:26.753000 [debug] [Thread-1  ]: Compiling model.AIRBYTE_DBT_DEMO.dim_staff
+10:30:26.753165 [debug] [Thread-4  ]: Finished running node model.AIRBYTE_DBT_DEMO.stg_pagila_store
+10:30:26.753401 [debug] [Thread-2  ]: Began executing node model.AIRBYTE_DBT_DEMO.dim_film
+10:30:26.756134 [debug] [Thread-1  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.dim_staff"
+10:30:26.759178 [debug] [Thread-2  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.dim_film"
+10:30:26.759510 [debug] [Thread-4  ]: Began running node model.AIRBYTE_DBT_DEMO.dim_store
+10:30:26.760466 [debug] [Thread-1  ]: finished collecting timing info
+10:30:26.760986 [info ] [Thread-4  ]: 10 of 11 START table model PAGILA_data_mart.dim_store........................... [RUN]
+10:30:26.762218 [debug] [Thread-2  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.dim_film"
+10:30:26.762460 [debug] [Thread-1  ]: Began executing node model.AIRBYTE_DBT_DEMO.dim_staff
+10:30:26.762936 [debug] [Thread-4  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.dim_store"
+10:30:26.763111 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.dim_film: create or replace transient table AIRBYTE_DATABASE.PAGILA_data_mart.dim_film  as
+      (SELECT *
+FROM AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_film
+      )
+/* run by JVEKEMANS */;
+10:30:26.765389 [debug] [Thread-1  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.dim_staff"
+10:30:26.765703 [debug] [Thread-4  ]: Began compiling node model.AIRBYTE_DBT_DEMO.dim_store
+10:30:26.765944 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+10:30:26.766249 [debug] [Thread-4  ]: Compiling model.AIRBYTE_DBT_DEMO.dim_store
+10:30:26.766669 [debug] [Thread-1  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.dim_staff"
+10:30:26.776999 [debug] [Thread-4  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.dim_store"
+10:30:26.777953 [debug] [Thread-1  ]: On model.AIRBYTE_DBT_DEMO.dim_staff: create or replace transient table AIRBYTE_DATABASE.PAGILA_data_mart.dim_staff  as
+      (SELECT *
+FROM AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_staff
+      )
+/* run by JVEKEMANS */;
+10:30:26.778605 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+10:30:26.781051 [debug] [Thread-4  ]: finished collecting timing info
+10:30:26.781316 [debug] [Thread-4  ]: Began executing node model.AIRBYTE_DBT_DEMO.dim_store
+10:30:26.786683 [debug] [Thread-4  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.dim_store"
+10:30:26.787786 [debug] [Thread-4  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.dim_store"
+10:30:26.788182 [debug] [Thread-4  ]: On model.AIRBYTE_DBT_DEMO.dim_store: create or replace transient table AIRBYTE_DATABASE.PAGILA_data_mart.dim_store  as
+      (SELECT *
+FROM AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_store
+      )
+/* run by JVEKEMANS */;
+10:30:26.788432 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+10:30:27.333506 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 2.31 seconds
+10:30:27.341790 [debug] [Thread-3  ]: finished collecting timing info
+10:30:27.347653 [debug] [Thread-3  ]: On model.AIRBYTE_DBT_DEMO.dim_customer: Close
+10:30:27.562605 [info ] [Thread-3  ]: 7 of 11 OK created table model PAGILA_data_mart.dim_customer.................... [[32mSUCCESS 1[0m in 2.54s]
+10:30:27.564871 [debug] [Thread-3  ]: Finished running node model.AIRBYTE_DBT_DEMO.dim_customer
+10:30:29.165694 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 2.38 seconds
+10:30:29.167061 [debug] [Thread-4  ]: finished collecting timing info
+10:30:29.167215 [debug] [Thread-4  ]: On model.AIRBYTE_DBT_DEMO.dim_store: Close
+10:30:29.351478 [info ] [Thread-4  ]: 10 of 11 OK created table model PAGILA_data_mart.dim_store...................... [[32mSUCCESS 1[0m in 2.59s]
+10:30:29.351815 [debug] [Thread-4  ]: Finished running node model.AIRBYTE_DBT_DEMO.dim_store
+10:30:30.002848 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 3.22 seconds
+10:30:30.004992 [debug] [Thread-1  ]: finished collecting timing info
+10:30:30.005181 [debug] [Thread-1  ]: On model.AIRBYTE_DBT_DEMO.dim_staff: Close
+10:30:30.231876 [info ] [Thread-1  ]: 9 of 11 OK created table model PAGILA_data_mart.dim_staff....................... [[32mSUCCESS 1[0m in 3.48s]
+10:30:30.232373 [debug] [Thread-1  ]: Finished running node model.AIRBYTE_DBT_DEMO.dim_staff
+10:30:30.333556 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 3.57 seconds
+10:30:30.334855 [debug] [Thread-2  ]: finished collecting timing info
+10:30:30.335010 [debug] [Thread-2  ]: On model.AIRBYTE_DBT_DEMO.dim_film: Close
+10:30:30.562860 [info ] [Thread-2  ]: 8 of 11 OK created table model PAGILA_data_mart.dim_film........................ [[32mSUCCESS 1[0m in 3.82s]
+10:30:30.563381 [debug] [Thread-2  ]: Finished running node model.AIRBYTE_DBT_DEMO.dim_film
+10:30:30.564246 [debug] [Thread-3  ]: Began running node model.AIRBYTE_DBT_DEMO.fct_sales
+10:30:30.564987 [info ] [Thread-3  ]: 11 of 11 START table model PAGILA_data_mart.fct_sales........................... [RUN]
+10:30:30.565438 [debug] [Thread-3  ]: Acquiring new snowflake connection "model.AIRBYTE_DBT_DEMO.fct_sales"
+10:30:30.565592 [debug] [Thread-3  ]: Began compiling node model.AIRBYTE_DBT_DEMO.fct_sales
+10:30:30.565844 [debug] [Thread-3  ]: Compiling model.AIRBYTE_DBT_DEMO.fct_sales
+10:30:30.572922 [debug] [Thread-3  ]: Writing injected SQL for node "model.AIRBYTE_DBT_DEMO.fct_sales"
+10:30:30.574029 [debug] [Thread-3  ]: finished collecting timing info
+10:30:30.574178 [debug] [Thread-3  ]: Began executing node model.AIRBYTE_DBT_DEMO.fct_sales
+10:30:30.577391 [debug] [Thread-3  ]: Writing runtime SQL for node "model.AIRBYTE_DBT_DEMO.fct_sales"
+10:30:30.578878 [debug] [Thread-3  ]: Using snowflake connection "model.AIRBYTE_DBT_DEMO.fct_sales"
+10:30:30.579007 [debug] [Thread-3  ]: On model.AIRBYTE_DBT_DEMO.fct_sales: create or replace transient table AIRBYTE_DATABASE.PAGILA_data_mart.fct_sales  as
+      (with sales_fact
+AS (
+	SELECT  COALESCE(dd.date_dim_id, '0') AS date_id,
+        COALESCE(dc.customer_id, '0') AS customer_id,
+		COALESCE(df.film_id, '0') AS film_id,
+		COALESCE(ds.store_id, '0') AS store_id,
+		COALESCE(dst.staff_id, '0') AS staff_id,
+		amount
+	FROM AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_sales src
+	LEFT JOIN AIRBYTE_DATABASE.PAGILA_data_mart.dim_customer dc ON src.customer_id = dc.customer_id
+	LEFT JOIN AIRBYTE_DATABASE.PAGILA_data_mart.dim_store ds ON src.store_id = ds.store_id
+	LEFT JOIN AIRBYTE_DATABASE.PAGILA_data_mart.dim_film df ON src.film_id = df.film_id
+	LEFT JOIN AIRBYTE_DATABASE.PAGILA_data_mart.dim_staff dst ON src.staff_id = dst.staff_id
+    LEFT JOIN AIRBYTE_DATABASE.PAGILA_data_mart.dim_date dd ON DATE (src.payment_date) = dd.date_day
+	)
+
+SELECT *
+FROM sales_fact
+      )
+/* run by JVEKEMANS */;
+10:30:30.579105 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+10:30:33.498996 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 2.92 seconds
+10:30:33.501615 [debug] [Thread-3  ]: finished collecting timing info
+10:30:33.501917 [debug] [Thread-3  ]: On model.AIRBYTE_DBT_DEMO.fct_sales: Close
+10:30:33.688154 [info ] [Thread-3  ]: 11 of 11 OK created table model PAGILA_data_mart.fct_sales...................... [[32mSUCCESS 1[0m in 3.12s]
+10:30:33.688464 [debug] [Thread-3  ]: Finished running node model.AIRBYTE_DBT_DEMO.fct_sales
+10:30:33.690005 [debug] [MainThread]: Acquiring new snowflake connection "master"
+10:30:33.690565 [info ] [MainThread]: 
+10:30:33.690913 [info ] [MainThread]: Finished running 5 view models, 6 table models in 14.08s.
+10:30:33.691270 [debug] [MainThread]: Connection 'master' was properly closed.
+10:30:33.691471 [debug] [MainThread]: Connection 'model.AIRBYTE_DBT_DEMO.dim_film' was properly closed.
+10:30:33.691647 [debug] [MainThread]: Connection 'model.AIRBYTE_DBT_DEMO.dim_staff' was properly closed.
+10:30:33.691870 [debug] [MainThread]: Connection 'model.AIRBYTE_DBT_DEMO.dim_store' was properly closed.
+10:30:33.692052 [debug] [MainThread]: Connection 'model.AIRBYTE_DBT_DEMO.fct_sales' was properly closed.
+10:30:33.707033 [info ] [MainThread]: 
+10:30:33.707269 [info ] [MainThread]: [32mCompleted successfully[0m
+10:30:33.707456 [info ] [MainThread]: 
+10:30:33.707594 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 TOTAL=11

@@ -1,0 +1,44 @@
+# ----------------------------------------------------------------------------------------
+#   _____       _______        _____ ______ _   _  _____ ______ 
+#  |  __ \   /\|__   __|/\    / ____|  ____| \ | |/ ____|  ____|
+#  | |  | | /  \  | |  /  \  | (___ | |__  |  \| | (___ | |__   
+#  | |  | |/ /\ \ | | / /\ \  \___ \|  __| | . ` |\___ \|  __|  
+#  | |__| / ____ \| |/ ____ \ ____) | |____| |\  |____) | |____ 
+#  |_____/_/    \_\_/_/    \_\_____/|______|_| \_|_____/|______|
+#
+# ----------------------------------------------------------------------------------------
+
+config:
+  send_anonymous_usage_stats: false
+  use_colors: true
+  # partial_parse: <integer>
+  # printer_width: <true | false>
+  # write_json: <true | false>
+  # warn_error: <true | false>
+  # log_format: <true | false>
+  # debug: <true | false>
+  # version_check: <true | false>
+  # fail_fast: <true | false>
+  # use_experimental_parser: <true | false>
+  # static_parser: <true | false>
+
+AIRBYTE_DBT_DEMO: # NAME OF PROFILE
+  target: dev # MUST MATCH ANY OF DEFINED OUTPUTS
+  outputs:
+    dev: # TARGET NAME
+      type: snowflake # Read more about snowflake configuration on https://docs.getdbt.com/reference/warehouse-profiles/snowflake-profile
+      account: datasense.eu-west-1
+
+      user: JVEKEMANS
+      password: "V2e@7ZFLbn2d" # STORED IN PLAIN TEXT
+
+      role: SYSADMIN
+
+      warehouse: AIRBYTE_WAREHOUSE
+      database: AIRBYTE_DATABASE
+      #database: AIRBYTE_DBT_DEMO
+      schema: PAGILA
+
+      client_session_keep_alive: False
+
+      threads: 4

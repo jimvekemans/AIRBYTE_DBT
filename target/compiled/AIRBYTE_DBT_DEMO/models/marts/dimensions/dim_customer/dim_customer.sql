@@ -1,0 +1,2 @@
+SELECT *
+FROM AIRBYTE_DATABASE.PAGILA_staging.stg_pagila_customer
