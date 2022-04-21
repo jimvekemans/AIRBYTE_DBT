@@ -13,28 +13,40 @@ sources:
               - not_null
           - name: "last_update"
           - name: "last_name"
-          - name: "first_name"    
+          - name: "first_name"
+      
       - name: address
         columns:
         - name: address_id
           description: Primary key of the table
-
+      
       - name: category
         columns:
         - name: category_id
           description: Primary key of the table
 
       - name: city
+
       - name: country
+
       - name: customer
+
       - name: film
+
       - name: film_actor
+
       - name: film_category
+
       - name: film_text
+
       - name: inventory
+
       - name: language
+
       - name: payment
+
       - name: rental
+      
       - name: staff
         columns:
         - name: staff_id
